@@ -1,0 +1,2881 @@
+definitions:
+  battle.BattleReport:
+    properties:
+      actions:
+        description: 指令
+        items:
+          items:
+            type: object
+          type: array
+        type: array
+      attacker:
+        $ref: '#/definitions/battle.ReportPlayer'
+        description: 攻击方信息
+      background:
+        description: 背景
+        type: integer
+      defender:
+        $ref: '#/definitions/battle.ReportPlayer'
+        description: 防御方信息
+      maxTime:
+        description: 限时
+        type: integer
+      result:
+        $ref: '#/definitions/battle.Result'
+        description: 结果
+      type:
+        description: 战斗类型
+        type: integer
+    type: object
+  battle.ReportPlayer:
+    properties:
+      avatar:
+        type: integer
+      fType:
+        description: 战斗类型
+        type: integer
+      fightingCapacity:
+        type: integer
+      heroID:
+        type: integer
+      hp:
+        type: integer
+      id:
+        type: integer
+      level:
+        type: integer
+      maxHP:
+        description: 总血量
+        type: integer
+      name:
+        type: string
+    type: object
+  battle.Result:
+    properties:
+      attackerHP:
+        description: 攻击方剩余血量
+        type: integer
+      costTime:
+        description: 消耗时间
+        type: integer
+      defenderHP:
+        description: 防守方剩余血量
+        type: integer
+      result:
+        description: 0攻击方胜利 1防守方胜利 2平局
+        type: integer
+    type: object
+  constant.Paging:
+    properties:
+      page:
+        type: integer
+      perPage:
+        type: integer
+      totalNum:
+        type: integer
+    type: object
+  entity.Skill:
+    properties:
+      id:
+        type: integer
+      level:
+        type: integer
+    type: object
+  entity.Skills:
+    additionalProperties:
+      $ref: '#/definitions/entity.Skill'
+    type: object
+  entity.Skin:
+    properties:
+      active:
+        type: boolean
+      fightingCapacity:
+        type: integer
+      val:
+        type: integer
+    type: object
+  entity.SkinMap:
+    additionalProperties:
+      $ref: '#/definitions/entity.Skin'
+    type: object
+  msg.AddBuffRequest:
+    properties:
+      adsID:
+        type: string
+    type: object
+  msg.Ads:
+    properties:
+      ids:
+        description: 当日领取过得广告奖励ID列表
+        items:
+          type: integer
+        type: array
+      num:
+        description: 当日累计看广告次数
+        type: integer
+    type: object
+  msg.AdsReceiveResponse:
+    properties:
+      rewards:
+        items:
+          $ref: '#/definitions/msg.Reward'
+        type: array
+    type: object
+  msg.AdsStartResponse:
+    properties:
+      adsID:
+        description: 广告ID
+        type: string
+      expireTime:
+        description: 过期时间
+        type: integer
+    type: object
+  msg.Alchemy:
+    properties:
+      nextReceiveTime:
+        description: 下次CD
+        type: integer
+      payNum:
+        description: 付费次数
+        type: integer
+    type: object
+  msg.AlchemyClearRequest:
+    type: object
+  msg.AlchemyStartResponse:
+    properties:
+      rewards:
+        items:
+          $ref: '#/definitions/msg.Reward'
+        type: array
+    type: object
+  msg.AnnalsReceiveResponse:
+    properties:
+      rewards:
+        items:
+          $ref: '#/definitions/msg.Reward'
+        type: array
+    type: object
+  msg.AnnalsShowResponse:
+    properties:
+      annalsIDs:
+        description: 已经完成的成就ID列表
+        items:
+          type: integer
+        type: array
+      campaignNum:
+        description: 关卡数
+        type: integer
+      fightingCapacity:
+        description: 总战力
+        type: integer
+      heroList:
+        description: 英雄列表
+        items:
+          $ref: '#/definitions/msg.HeroAnnals'
+        type: array
+    type: object
+  msg.ApocalypseAttackResponse:
+    properties:
+      players:
+        description: 队员列表
+        items:
+          $ref: '#/definitions/msg.Player'
+        type: array
+      report:
+        description: 战报列表
+        items:
+          $ref: '#/definitions/battle.BattleReport'
+        type: array
+      rewards:
+        items:
+          $ref: '#/definitions/msg.Reward'
+        type: array
+      win:
+        type: boolean
+    type: object
+  msg.ApocalypseReceiveResponse:
+    properties:
+      rewards:
+        items:
+          $ref: '#/definitions/msg.Reward'
+        type: array
+    type: object
+  msg.ApocalypseShowResponse:
+    properties:
+      apocalypseID:
+        description: boss表ID
+        type: integer
+      remainNum:
+        description: 剩余次数
+        type: integer
+      status:
+        description: 状态 0创建 1失败 2成功
+        type: integer
+    type: object
+  msg.ArenaAttackResponse:
+    properties:
+      report:
+        $ref: '#/definitions/battle.BattleReport'
+        description: 战报
+      rewards:
+        description: 奖励
+        items:
+          $ref: '#/definitions/msg.Reward'
+        type: array
+      win:
+        description: 是否胜利
+        type: boolean
+    type: object
+  msg.ArenaListResponse:
+    properties:
+      pageInfo:
+        $ref: '#/definitions/constant.Paging'
+        description: 分页信息
+      rankers:
+        description: 排行榜列表
+        items:
+          $ref: '#/definitions/msg.Ranker'
+        type: array
+      records:
+        description: 挑战记录
+        items:
+          $ref: '#/definitions/msg.ArenaRecord'
+        type: array
+      self:
+        $ref: '#/definitions/msg.Ranker'
+        description: 本人排名信息
+    type: object
+  msg.ArenaRecord:
+    properties:
+      name:
+        description: 用户名
+        type: string
+      newRank:
+        description: 新名次
+        type: integer
+      oldRank:
+        description: 旧名次
+        type: integer
+      time:
+        description: 时间戳
+        type: integer
+      uid:
+        description: 用户ID
+        type: integer
+      win:
+        description: 是否战胜本人
+        type: boolean
+    type: object
+  msg.ArenaSignUpResponse:
+    properties:
+      arenaIsSign:
+        type: boolean
+    type: object
+  msg.Building:
+    properties:
+      buildingID:
+        type: integer
+      id:
+        type: integer
+      level:
+        type: integer
+    type: object
+  msg.BuildingListResponse:
+    properties:
+      buildings:
+        items:
+          $ref: '#/definitions/msg.Building'
+        type: array
+    type: object
+  msg.BuildingUpgradeResponse:
+    properties:
+      level:
+        type: integer
+    type: object
+  msg.BusinessManReceiveResponse:
+    properties:
+      rewards:
+        items:
+          $ref: '#/definitions/msg.Reward'
+        type: array
+    type: object
+  msg.Campaign:
+    properties:
+      lastCampainID:
+        description: 最后通过的关卡ID
+        type: integer
+      lastCampainTime:
+        description: 最后通关时间
+        type: integer
+      preCampainID:
+        description: 未领取奖励的关卡
+        type: integer
+    type: object
+  msg.CampaignAttackResponse:
+    properties:
+      heroID:
+        type: integer
+      heroLevel:
+        type: integer
+      report:
+        $ref: '#/definitions/battle.BattleReport'
+      rewards:
+        items:
+          $ref: '#/definitions/msg.Reward'
+        type: array
+      win:
+        type: boolean
+    type: object
+  msg.CampaignReceiveResponse:
+    properties:
+      rewards:
+        items:
+          $ref: '#/definitions/msg.Reward'
+        type: array
+    type: object
+  msg.CastResponse:
+    properties:
+      id:
+        description: 铸造表ID
+        type: integer
+    type: object
+  msg.ChangeAvatarResponse:
+    type: object
+  msg.ChangeNameResponse:
+    type: object
+  msg.Crystal:
+    properties:
+      CrystalID:
+        type: integer
+      id:
+        type: integer
+      level:
+        type: integer
+    type: object
+  msg.CrystalListResponse:
+    properties:
+      Crystals:
+        items:
+          $ref: '#/definitions/msg.Crystal'
+        type: array
+    type: object
+  msg.CrystalUpgradeResponse:
+    properties:
+      level:
+        type: integer
+    type: object
+  msg.Equip:
+    properties:
+      effectID1:
+        type: integer
+      effectID2:
+        type: integer
+      effectID3:
+        type: integer
+      effectVal1:
+        type: integer
+      effectVal2:
+        type: integer
+      effectVal3:
+        type: integer
+      equipID:
+        type: integer
+      fightingCapacity:
+        type: integer
+      forgeID:
+        type: integer
+      id:
+        type: integer
+      level:
+        type: integer
+      pos:
+        type: integer
+      skillEffect1:
+        type: integer
+      skillEffect2:
+        type: integer
+      skillEffect3:
+        type: integer
+      skillID:
+        type: integer
+    type: object
+  msg.EquipDecomposeResponse:
+    properties:
+      rewards:
+        items:
+          $ref: '#/definitions/msg.Reward'
+        type: array
+    type: object
+  msg.EquipForgeResponse:
+    properties:
+      equip:
+        $ref: '#/definitions/msg.Equip'
+    type: object
+  msg.EquipListResponse:
+    properties:
+      equips:
+        items:
+          $ref: '#/definitions/msg.Equip'
+        type: array
+      pageInfo:
+        $ref: '#/definitions/constant.Paging'
+    type: object
+  msg.EquipReceiveResponse:
+    properties:
+      rewards:
+        items:
+          $ref: '#/definitions/msg.Reward'
+        type: array
+    type: object
+  msg.EquipUnloadResponse:
+    type: object
+  msg.EquipUpgradeResponse:
+    properties:
+      equip:
+        $ref: '#/definitions/msg.Equip'
+    type: object
+  msg.EquipUseResponse:
+    type: object
+  msg.Explore:
+    properties:
+      exploreID:
+        description: 配置表ID
+        type: integer
+      heroIDs:
+        description: 武将自增ID列表
+        items:
+          type: integer
+        type: array
+      id:
+        description: 自增ID
+        type: integer
+      mul:
+        description: 倍数 1代表100%
+        type: number
+      startTime:
+        description: 开始时间
+        type: integer
+    type: object
+  msg.ExploreListResponse:
+    properties:
+      explores:
+        items:
+          $ref: '#/definitions/msg.Explore'
+        type: array
+      heros:
+        items:
+          $ref: '#/definitions/msg.Hero'
+        type: array
+    type: object
+  msg.ExploreReceiveResponse:
+    properties:
+      rewards:
+        items:
+          $ref: '#/definitions/msg.Reward'
+        type: array
+    type: object
+  msg.ExploreSetResponse:
+    properties:
+      explore:
+        $ref: '#/definitions/msg.Explore'
+      rewards:
+        items:
+          $ref: '#/definitions/msg.Reward'
+        type: array
+    type: object
+  msg.FromTo:
+    properties:
+      from:
+        type: integer
+      to:
+        type: integer
+    type: object
+  msg.GmCommonResponse:
+    type: object
+  msg.GuideBattleResponse:
+    properties:
+      report:
+        $ref: '#/definitions/battle.BattleReport'
+      win:
+        type: boolean
+    type: object
+  msg.GuideStepResponse:
+    properties:
+      step:
+        type: integer
+    type: object
+  msg.Hero:
+    properties:
+      attackFreq:
+        type: integer
+      attackTrans:
+        type: integer
+      defendTrans:
+        type: integer
+      evolveTimes:
+        type: integer
+      exploreID:
+        type: integer
+      fightingCapacity:
+        type: integer
+      heroID:
+        type: integer
+      id:
+        type: integer
+      level:
+        type: integer
+      name:
+        type: string
+      race:
+        type: integer
+      sex:
+        type: integer
+      skills:
+        $ref: '#/definitions/entity.Skills'
+      skinID:
+        type: integer
+      skins:
+        $ref: '#/definitions/entity.SkinMap'
+      type:
+        type: integer
+    type: object
+  msg.HeroAnnals:
+    properties:
+      fightingCapacity:
+        type: integer
+      heroID:
+        type: integer
+    type: object
+  msg.HeroEvolveResponse:
+    properties:
+      evolveTimes:
+        type: integer
+    type: object
+  msg.HeroJoinResponse:
+    type: object
+  msg.HeroListResponse:
+    properties:
+      heros:
+        items:
+          $ref: '#/definitions/msg.Hero'
+        type: array
+    type: object
+  msg.HeroSkinGetResponse:
+    properties:
+      skin:
+        $ref: '#/definitions/entity.Skin'
+    type: object
+  msg.HeroSkinUseResponse:
+    properties:
+      fightingCapacity:
+        type: integer
+      skinID:
+        type: integer
+    type: object
+  msg.HeroUnloadResponse:
+    type: object
+  msg.HeroUpgradeResponse:
+    properties:
+      level:
+        type: integer
+    type: object
+  msg.LoginResponse:
+    properties:
+      refreshToken:
+        description: REFRESHTOKEN（TOKEN快过期时延期用）
+        type: string
+      refreshTokenExpireTime:
+        description: REFRESHTOKEN过期时间
+        type: integer
+      token:
+        description: TOKEN
+        type: string
+      tokenExpireTime:
+        description: TOKEN过期时间
+        type: integer
+      uid:
+        description: 用户ID
+        type: integer
+    type: object
+  msg.Mail:
+    properties:
+      args:
+        description: 占位符参数
+        items:
+          type: string
+        type: array
+      attachment:
+        description: 附件（通用奖励格式）
+        items:
+          type: string
+        type: array
+      createTime:
+        description: 创建时间
+        type: integer
+      hasReceived:
+        description: 是否领取附件
+        type: integer
+      id:
+        description: 数据库ID
+        type: integer
+      mailID:
+        description: 邮件模板ID
+        type: integer
+      status:
+        description: 状态 0未读 1已读 2已删除
+        type: integer
+    type: object
+  msg.MailListResponse:
+    properties:
+      mails:
+        items:
+          $ref: '#/definitions/msg.Mail'
+        type: array
+      pageInfo:
+        $ref: '#/definitions/constant.Paging'
+    type: object
+  msg.MailReadResponse:
+    type: object
+  msg.MailReceiveAllResponse:
+    properties:
+      rewards:
+        items:
+          $ref: '#/definitions/msg.Reward'
+        type: array
+    type: object
+  msg.MailReceiveResponse:
+    properties:
+      rewards:
+        items:
+          $ref: '#/definitions/msg.Reward'
+        type: array
+    type: object
+  msg.Monster:
+    properties:
+      status:
+        description: 0 创建 1战斗失败 2战斗胜利 3已领奖
+        type: integer
+      towerID:
+        type: integer
+    type: object
+  msg.MonsterAttackResponse:
+    properties:
+      report:
+        $ref: '#/definitions/battle.BattleReport'
+      rewards:
+        items:
+          $ref: '#/definitions/msg.Reward'
+        type: array
+      win:
+        type: boolean
+    type: object
+  msg.MonsterReceiveResponse:
+    properties:
+      rewards:
+        items:
+          $ref: '#/definitions/msg.Reward'
+        type: array
+    type: object
+  msg.MonsterShowResponse:
+    properties:
+      campaignID:
+        type: integer
+      monsters:
+        items:
+          $ref: '#/definitions/msg.Monster'
+        type: array
+    type: object
+  msg.OnlineReward:
+    properties:
+      nextReceiveTime:
+        description: 下次领奖时间
+        type: integer
+      payNum:
+        description: 支付次数
+        type: integer
+      remainAdsNum:
+        description: 剩余广告次数
+        type: integer
+      rewardIDs:
+        description: 奖励ID列表
+        items:
+          type: integer
+        type: array
+    type: object
+  msg.OnlineRewardReceiveResponse:
+    properties:
+      rewards:
+        items:
+          $ref: '#/definitions/msg.Reward'
+        type: array
+    type: object
+  msg.OnlineRewardShowResponse:
+    properties:
+      rewardIDs:
+        items:
+          type: integer
+        type: array
+    type: object
+  msg.Player:
+    properties:
+      avatar:
+        type: integer
+      id:
+        type: integer
+      level:
+        type: integer
+      name:
+        type: string
+    type: object
+  msg.Ranker:
+    properties:
+      avatar:
+        description: 头像
+        type: integer
+      fightingCapacity:
+        description: 战力
+        type: integer
+      id:
+        description: rank表主键
+        type: integer
+      isPlayer:
+        description: 是否是玩家
+        type: boolean
+      level:
+        description: 等级
+        type: integer
+      name:
+        description: 用户名
+        type: string
+      rank:
+        description: 名次
+        type: integer
+      uid:
+        description: 用户id
+        type: integer
+    type: object
+  msg.Reward:
+    properties:
+      mainType:
+        type: integer
+      subType:
+        type: integer
+      val:
+        type: integer
+    type: object
+  msg.SystemConfigResponse:
+    properties:
+      businessManSettings:
+        additionalProperties:
+          $ref: '#/definitions/msg.FromTo'
+        type: object
+      towerSettings:
+        additionalProperties:
+          $ref: '#/definitions/msg.FromTo'
+        type: object
+    type: object
+  msg.Tech:
+    properties:
+      id:
+        type: integer
+      level:
+        type: integer
+      techID:
+        type: integer
+    type: object
+  msg.TechListResponse:
+    properties:
+      techs:
+        items:
+          $ref: '#/definitions/msg.Tech'
+        type: array
+    type: object
+  msg.TechUpgradeResponse:
+    properties:
+      level:
+        type: integer
+    type: object
+  msg.TestPveResponse:
+    properties:
+      debug:
+        type: string
+      report:
+        $ref: '#/definitions/battle.BattleReport'
+      win:
+        type: boolean
+    type: object
+  msg.User:
+    properties:
+      acediaStone:
+        description: 飓风之源
+        type: integer
+      avaritiaStone:
+        description: 光明之源
+        type: integer
+      avatar:
+        description: 头像
+        type: integer
+      benYuan:
+        description: 本源之力
+        type: integer
+      book:
+        description: 秘传书
+        type: integer
+      campaignNum:
+        description: 关卡数
+        type: integer
+      castID:
+        description: 锻造ID
+        type: integer
+      diamond:
+        description: 钻石
+        type: integer
+      element:
+        description: 元素结晶
+        type: integer
+      gold:
+        description: 金币
+        type: integer
+      goldBuffEndIn:
+        description: 双倍金币到期时间
+        type: integer
+      goldFlushIn:
+        description: 上次金币结算时间
+        type: integer
+      goldIncrement:
+        description: 金币每秒增速
+        type: integer
+      guideStep:
+        description: 新手引导步骤
+        type: integer
+      gulaStone:
+        description: 大地之源
+        type: integer
+      invidiaStone:
+        description: 跃水之源
+        type: integer
+      iraStone:
+        description: 时空之源
+        type: integer
+      level:
+        description: 等级
+        type: integer
+      luxuriaStone:
+        description: 黑暗之源
+        type: integer
+      mainHeroID:
+        description: 主将ID
+        type: integer
+      name:
+        description: 用户名
+        type: string
+      qianNeng:
+        description: 潜能之力
+        type: integer
+      soulCrystal:
+        description: 魂石
+        type: integer
+      subHeroID:
+        description: 伙伴ID
+        type: integer
+      superbiaStone:
+        description: 炽焰之源
+        type: integer
+      treasureAnima:
+        description: 宝物精华
+        type: integer
+    type: object
+  msg.UserExtend:
+    properties:
+      ads:
+        $ref: '#/definitions/msg.Ads'
+        description: 广告状态
+      alchemy:
+        $ref: '#/definitions/msg.Alchemy'
+        description: 炼药状态
+      arenaIsSign:
+        description: 竞技场报名状态
+        type: boolean
+      arenaRemainNum:
+        description: 竞技场剩余挑战次数
+        type: integer
+      businessMan:
+        description: 商人状态
+        type: integer
+      campaign:
+        $ref: '#/definitions/msg.Campaign'
+        description: 关卡
+      onlineReward:
+        $ref: '#/definitions/msg.OnlineReward'
+        description: 在线奖励
+    type: object
+  msg.UserInfoResponse:
+    properties:
+      extend:
+        $ref: '#/definitions/msg.UserExtend'
+      user:
+        $ref: '#/definitions/msg.User'
+    type: object
+host: 8.140.113.88:8080
+info:
+  contact: {}
+  description: 接口文档
+  title: dakunlun
+  version: "1.0"
+paths:
+  /api/ads/add/buff:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: 广告ID
+        in: query
+        name: adsID
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.AddBuffRequest'
+      summary: 图腾
+  /api/ads/receive:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: ID
+        in: query
+        name: ID
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.AdsReceiveResponse'
+      summary: 广告领奖
+  /api/ads/start:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.AdsStartResponse'
+      summary: 广告开始
+  /api/apocalypse/attack:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: 天启表ID
+        in: query
+        name: apocalypseID
+        required: true
+        type: integer
+      - description: 类型 0普通 1广告
+        in: query
+        name: type
+        required: true
+        type: integer
+      - description: 广告ID
+        in: query
+        name: adsID
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.ApocalypseAttackResponse'
+      summary: 挑战天启BOSS
+  /api/apocalypse/receive:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: 天启表ID
+        in: query
+        name: apocalypseID
+        required: true
+        type: integer
+      - description: 类型 0普通 1广告
+        in: query
+        name: type
+        required: true
+        type: integer
+      - description: 广告ID
+        in: query
+        name: adsID
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.ApocalypseReceiveResponse'
+      summary: 领取挑战奖励
+  /api/apocalypse/show:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.ApocalypseShowResponse'
+      summary: 天启界面
+  /api/arena/attack:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: ID
+        in: query
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.ArenaAttackResponse'
+      summary: 竞技场列表
+  /api/arena/list:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.ArenaListResponse'
+      summary: 竞技场列表
+  /api/arena/signup:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.ArenaSignUpResponse'
+      summary: 报名参赛
+  /api/building/list:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.BuildingListResponse'
+      summary: 建筑列表
+  /api/building/upgrade:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: 建筑自增ID
+        in: query
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.BuildingUpgradeResponse'
+      summary: 建筑升级
+  /api/campaign/attack:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: 关卡ID
+        in: query
+        name: campaignID
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.CampaignAttackResponse'
+      summary: 关卡挑战
+  /api/campaign/receive:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: 类型 0普通 1广告
+        in: query
+        name: type
+        required: true
+        type: integer
+      - description: 广告ID
+        in: query
+        name: adsID
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.CampaignReceiveResponse'
+      summary: 关卡领奖
+  /api/crystal/list:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.CrystalListResponse'
+      summary: 水晶列表
+  /api/crystal/upgrade:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: 水晶自增ID
+        in: query
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.CrystalUpgradeResponse'
+      summary: 水晶升级
+  /api/equip/decompose:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: id列表
+        in: query
+        items:
+          type: integer
+        name: ids
+        required: true
+        type: array
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.EquipDecomposeResponse'
+      summary: 装备分解
+  /api/equip/doc:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.EquipUseResponse'
+      summary: 装备图鉴
+  /api/equip/forge:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: id
+        in: query
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.EquipForgeResponse'
+      summary: 装备锻造
+  /api/equip/list:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: 页号
+        in: query
+        name: page
+        required: true
+        type: integer
+      - description: 页号
+        in: query
+        name: perPage
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.EquipListResponse'
+      summary: 装备列表
+  /api/equip/receive:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: 自增ID
+        in: query
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.EquipReceiveResponse'
+      summary: 图鉴奖励领取
+  /api/equip/unload:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: ID
+        in: query
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.EquipUnloadResponse'
+      summary: 装备卸载
+  /api/equip/upgrade:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: id
+        in: query
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.EquipUpgradeResponse'
+      summary: 装备升级
+  /api/equip/use:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: ID
+        in: query
+        name: id
+        required: true
+        type: integer
+      - description: 位置1-6
+        in: query
+        name: pos
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.EquipUseResponse'
+      summary: 装备使用
+  /api/explore/list:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.ExploreListResponse'
+      summary: 探索列表
+  /api/explore/receive:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: 自增ID
+        in: query
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.ExploreReceiveResponse'
+      summary: 探索领奖
+  /api/explore/set:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: 探索自增ID
+        in: query
+        name: id
+        required: true
+        type: integer
+      - description: 英雄自增ID列表
+        in: query
+        items:
+          type: integer
+        name: heroIDs
+        required: true
+        type: array
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.ExploreSetResponse'
+      summary: 探索设置
+  /api/gm/addequip:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 装备ID
+        in: query
+        name: equipID
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.GmCommonResponse'
+      summary: 增加装备
+  /api/gm/incrgold:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 金币数量
+        in: query
+        name: gold
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.GmCommonResponse'
+      summary: 增加金币
+  /api/hero/evolve:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: 伙伴id
+        in: query
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.HeroEvolveResponse'
+      summary: 伙伴锻魂
+  /api/hero/join:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: 伙伴id
+        in: query
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.HeroJoinResponse'
+      summary: 设置伙伴出战
+  /api/hero/list:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.HeroListResponse'
+      summary: 伙伴列表
+  /api/hero/skin/get:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: 伙伴id
+        in: query
+        name: id
+        required: true
+        type: integer
+      - description: 皮肤ID
+        in: query
+        name: skinID
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.HeroSkinGetResponse'
+      summary: 看皮肤广告
+  /api/hero/skin/use:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: 伙伴id
+        in: query
+        name: id
+        required: true
+        type: integer
+      - description: 皮肤IO
+        in: query
+        name: skinID
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.HeroSkinUseResponse'
+      summary: 使用皮肤
+  /api/hero/unload:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.HeroUnloadResponse'
+      summary: 设置伙伴下阵
+  /api/hero/upgrade:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: 伙伴id
+        in: query
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.HeroUpgradeResponse'
+      summary: 伙伴升级
+  /api/lobby/alchemy/clear:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.AlchemyClearRequest'
+      summary: 炼药CD清除
+  /api/lobby/alchemy/start:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: 方式 0正常 1广告
+        in: query
+        name: type
+        required: true
+        type: integer
+      - description: 广告ID
+        in: query
+        name: adsID
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.AlchemyStartResponse'
+      summary: 开始炼药
+  /api/lobby/annals/receive:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: 成就ID
+        in: query
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.AnnalsReceiveResponse'
+      summary: 成就奖励领取
+  /api/lobby/annals/show:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.AnnalsShowResponse'
+      summary: 成就首页
+  /api/lobby/businessman/receive:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: 类型 0普通 1广告
+        in: query
+        name: type
+        required: true
+        type: integer
+      - description: 广告ID
+        in: query
+        name: adsID
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.BusinessManReceiveResponse'
+      summary: 神秘商人奖励
+  /api/lobby/cast:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.CastResponse'
+      summary: 铸造
+  /api/lobby/change/avatar:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: 头像表ID
+        in: query
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.ChangeAvatarResponse'
+      summary: 修改头像
+  /api/lobby/change/name:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: 名字
+        in: query
+        name: name
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.ChangeNameResponse'
+      summary: 修改名字
+  /api/lobby/guide/battle:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.GuideBattleResponse'
+  /api/lobby/guide/step:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: 步骤号 0-255
+        in: query
+        name: step
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.GuideStepResponse'
+      summary: 新手引导步骤号设置
+  /api/lobby/monster/attack:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: 列表index
+        in: query
+        name: index
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.MonsterAttackResponse'
+      summary: 怪物入侵挑战
+  /api/lobby/monster/receive:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: 列表index
+        in: query
+        name: index
+        required: true
+        type: integer
+      - description: 类型 0普通 1广告
+        in: query
+        name: type
+        required: true
+        type: integer
+      - description: 广告ID
+        in: query
+        name: adsID
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.MonsterReceiveResponse'
+      summary: 领取挑战奖励
+  /api/lobby/monster/show:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.MonsterShowResponse'
+      summary: 怪物入侵大地图
+  /api/lobby/onlinereward/receive:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: 方式 0正常 1广告
+        in: query
+        name: type
+        required: true
+        type: integer
+      - description: 广告ID
+        in: query
+        name: AdsID
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.OnlineRewardReceiveResponse'
+      summary: 领取在线奖励
+  /api/lobby/onlinereward/show:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: 广告ID
+        in: query
+        name: adsID
+        required: true
+        type: string
+      - description: 方式 0正常 1广告 2钻石
+        in: query
+        name: type
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.OnlineRewardShowResponse'
+      summary: 查看在线奖励
+  /api/lobby/system/config:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.SystemConfigResponse'
+      summary: 系统配置，每日0点刷一次，每次登录刷一次
+  /api/lobby/user:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.UserInfoResponse'
+      summary: 用户信息
+  /api/mail/list:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: 页号
+        in: query
+        name: page
+        required: true
+        type: integer
+      - description: 页号
+        in: query
+        name: perPage
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.MailListResponse'
+      summary: 邮件列表
+  /api/mail/read:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: 唯一ID
+        in: query
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.MailReadResponse'
+      summary: 标记已读
+  /api/mail/receive:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: 唯一ID
+        in: query
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.MailReceiveResponse'
+      summary: 领取附件
+  /api/mail/receiveall:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.MailReceiveAllResponse'
+      summary: 邮件批量领取
+  /api/tech/list:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.TechListResponse'
+      summary: 科技列表
+  /api/tech/upgrade:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: 科技自增ID
+        in: query
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.TechUpgradeResponse'
+      summary: 科技升级
+  /login/login/native:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 设备ID
+        in: query
+        name: name
+        required: true
+        type: string
+      - description: 是否清除账号
+        in: query
+        name: clear
+        required: true
+        type: boolean
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.LoginResponse'
+      summary: 登录
+  /ping:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: ping
+        in: query
+        name: message
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: pong
+          schema:
+            type: string
+      summary: check server's healthy
+  /pve:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 用户ID
+        in: header
+        name: GameUid
+        required: true
+        type: string
+      - description: 令牌
+        in: header
+        name: GameToken
+        required: true
+        type: string
+      - description: 请求序号
+        in: header
+        name: SeqId
+        required: true
+        type: integer
+      - description: 用户ID
+        in: query
+        name: uid
+        required: true
+        type: integer
+      - description: 关卡ID
+        in: query
+        name: campaignID
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/msg.TestPveResponse'
+      summary: 关卡挑战
+swagger: "2.0"

@@ -1,0 +1,48 @@
+
+xinShou.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BAIDIAN111
+  rotate: false
+  xy: 288, 0
+  size: 47, 47
+  orig: 47, 47
+  offset: 0, 0
+  index: -1
+BAIDIAN222
+  rotate: false
+  xy: 335, 0
+  size: 47, 47
+  orig: 47, 47
+  offset: 0, 0
+  index: -1
+BAIQUAN111
+  rotate: false
+  xy: 0, 3
+  size: 107, 107
+  orig: 107, 107
+  offset: 0, 0
+  index: -1
+BAIQUAN222
+  rotate: false
+  xy: 107, 3
+  size: 107, 107
+  orig: 107, 107
+  offset: 0, 0
+  index: -1
+SHOU111
+  rotate: false
+  xy: 214, 19
+  size: 74, 91
+  orig: 74, 91
+  offset: 0, 0
+  index: -1
+shouzhi
+  rotate: false
+  xy: 288, 47
+  size: 60, 63
+  orig: 60, 63
+  offset: 0, 0
+  index: -1

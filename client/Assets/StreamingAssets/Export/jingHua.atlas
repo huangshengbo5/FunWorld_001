@@ -1,0 +1,153 @@
+
+jingHua.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+DIGUANG
+  rotate: false
+  xy: 445, 742
+  size: 278, 278
+  orig: 278, 278
+  offset: 0, 0
+  index: -1
+GUANGDIAN/GUANGDIAN1111
+  rotate: false
+  xy: 723, 879
+  size: 153, 141
+  orig: 153, 141
+  offset: 0, 0
+  index: -1
+GUANGDIAN/GUANGDIAN2222
+  rotate: true
+  xy: 696, 566
+  size: 176, 180
+  orig: 176, 180
+  offset: 0, 0
+  index: -1
+GUANGDIAN/GUANGDIAN3333
+  rotate: false
+  xy: 239, 426
+  size: 201, 201
+  orig: 201, 201
+  offset: 0, 0
+  index: -1
+GUANGDIAN/GUANGDIAN4444
+  rotate: true
+  xy: 691, 267
+  size: 221, 216
+  orig: 221, 216
+  offset: 0, 0
+  index: -1
+GUANGDIAN/GUANGDIAN5555
+  rotate: true
+  xy: 0, 376
+  size: 251, 239
+  orig: 251, 239
+  offset: 0, 0
+  index: -1
+GUANGSHU1000
+  rotate: true
+  xy: 907, 383
+  size: 111, 94
+  orig: 111, 94
+  offset: 0, 0
+  index: -1
+GUANGSHU111
+  rotate: false
+  xy: 842, 494
+  size: 139, 72
+  orig: 139, 72
+  offset: 0, 0
+  index: -1
+GUANGSHU222
+  rotate: false
+  xy: 876, 924
+  size: 144, 96
+  orig: 144, 96
+  offset: 0, 0
+  index: -1
+GUANGSHU333
+  rotate: true
+  xy: 696, 493
+  size: 73, 146
+  orig: 73, 146
+  offset: 0, 0
+  index: -1
+GUANGSHU444
+  rotate: true
+  xy: 723, 753
+  size: 126, 145
+  orig: 126, 145
+  offset: 0, 0
+  index: -1
+GUANGSHU555
+  rotate: false
+  xy: 417, 161
+  size: 149, 89
+  orig: 149, 89
+  offset: 0, 0
+  index: -1
+GUANGSHU666
+  rotate: true
+  xy: 859, 143
+  size: 124, 105
+  orig: 124, 105
+  offset: 0, 0
+  index: -1
+GUANGSHU777
+  rotate: true
+  xy: 868, 777
+  size: 102, 152
+  orig: 102, 152
+  offset: 0, 0
+  index: -1
+GUANGSHU888
+  rotate: true
+  xy: 691, 223
+  size: 44, 168
+  orig: 44, 168
+  offset: 0, 0
+  index: -1
+GUANGSHU999
+  rotate: false
+  xy: 876, 619
+  size: 113, 158
+  orig: 113, 158
+  offset: 0, 0
+  index: -1
+SHIZI
+  rotate: false
+  xy: 0, 627
+  size: 445, 393
+  orig: 445, 393
+  offset: 0, 0
+  index: -1
+XIANQUAN111
+  rotate: true
+  xy: 445, 488
+  size: 254, 251
+  orig: 254, 251
+  offset: 0, 0
+  index: -1
+XIANQUAN222
+  rotate: false
+  xy: 440, 250
+  size: 251, 238
+  orig: 251, 238
+  offset: 0, 0
+  index: -1
+XIANQUAN333
+  rotate: true
+  xy: 0, 125
+  size: 251, 234
+  orig: 251, 234
+  offset: 0, 0
+  index: -1
+ZHONGGUANG
+  rotate: false
+  xy: 239, 247
+  size: 178, 179
+  orig: 178, 179
+  offset: 0, 0
+  index: -1

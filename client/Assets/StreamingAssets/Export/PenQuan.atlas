@@ -1,0 +1,132 @@
+
+PenQuan.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BIAN
+  rotate: true
+  xy: 211, 305
+  size: 205, 128
+  orig: 205, 128
+  offset: 0, 0
+  index: -1
+BO111
+  rotate: true
+  xy: 339, 378
+  size: 132, 60
+  orig: 132, 60
+  offset: 0, 0
+  index: -1
+BO222
+  rotate: true
+  xy: 0, 175
+  size: 199, 116
+  orig: 199, 116
+  offset: 0, 0
+  index: -1
+PENQUAN111
+  rotate: false
+  xy: 202, 204
+  size: 133, 101
+  orig: 133, 101
+  offset: 0, 0
+  index: -1
+PENQUAN222
+  rotate: false
+  xy: 0, 374
+  size: 211, 136
+  orig: 211, 136
+  offset: 0, 0
+  index: -1
+SHUI1-111
+  rotate: false
+  xy: 335, 201
+  size: 86, 104
+  orig: 86, 104
+  offset: 0, 0
+  index: -1
+SHUI1-222
+  rotate: false
+  xy: 116, 269
+  size: 86, 105
+  orig: 86, 105
+  offset: 0, 0
+  index: -1
+SHUI1-333
+  rotate: false
+  xy: 116, 164
+  size: 86, 105
+  orig: 86, 105
+  offset: 0, 0
+  index: -1
+SHUI2-111
+  rotate: false
+  xy: 241, 101
+  size: 66, 103
+  orig: 66, 103
+  offset: 0, 0
+  index: -1
+SHUI2-222
+  rotate: false
+  xy: 39, 70
+  size: 68, 105
+  orig: 68, 105
+  offset: 0, 0
+  index: -1
+SHUI2-333
+  rotate: true
+  xy: 39, 2
+  size: 68, 105
+  orig: 68, 105
+  offset: 0, 0
+  index: -1
+SHUI3-111
+  rotate: false
+  xy: 144, 15
+  size: 38, 149
+  orig: 38, 149
+  offset: 0, 0
+  index: -1
+SHUI3-222
+  rotate: false
+  xy: 0, 23
+  size: 39, 152
+  orig: 39, 152
+  offset: 0, 0
+  index: -1
+SHUI3-333
+  rotate: false
+  xy: 202, 52
+  size: 39, 152
+  orig: 39, 152
+  offset: 0, 0
+  index: -1
+WEN111
+  rotate: false
+  xy: 127, 78
+  size: 11, 34
+  orig: 11, 34
+  offset: 0, 0
+  index: -1
+WEN222
+  rotate: true
+  xy: 107, 70
+  size: 42, 20
+  orig: 42, 20
+  offset: 0, 0
+  index: -1
+WEN333
+  rotate: true
+  xy: 107, 112
+  size: 52, 26
+  orig: 52, 26
+  offset: 0, 0
+  index: -1
+WEN444
+  rotate: false
+  xy: 0, 0
+  size: 27, 23
+  orig: 27, 23
+  offset: 0, 0
+  index: -1

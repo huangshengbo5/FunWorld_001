@@ -1,0 +1,83 @@
+
+TaHeDong-Guang.png
+size: 256,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+DIAN111
+  rotate: true
+  xy: 0, 87
+  size: 23, 153
+  orig: 23, 153
+  offset: 0, 0
+  index: -1
+DIAN222
+  rotate: true
+  xy: 0, 64
+  size: 23, 146
+  orig: 23, 146
+  offset: 0, 0
+  index: -1
+DONGGUANG
+  rotate: false
+  xy: 153, 103
+  size: 7, 7
+  orig: 7, 7
+  offset: 0, 0
+  index: -1
+TAGUANG11
+  rotate: true
+  xy: 0, 56
+  size: 8, 164
+  orig: 8, 164
+  offset: 0, 0
+  index: -1
+TAGUANG22
+  rotate: true
+  xy: 0, 48
+  size: 8, 164
+  orig: 8, 164
+  offset: 0, 0
+  index: -1
+TAGUANG33
+  rotate: true
+  xy: 0, 40
+  size: 8, 164
+  orig: 8, 164
+  offset: 0, 0
+  index: -1
+TAGUANG44
+  rotate: true
+  xy: 0, 32
+  size: 8, 164
+  orig: 8, 164
+  offset: 0, 0
+  index: -1
+TAGUANG55
+  rotate: true
+  xy: 0, 24
+  size: 8, 164
+  orig: 8, 164
+  offset: 0, 0
+  index: -1
+TAGUANG66
+  rotate: true
+  xy: 0, 16
+  size: 8, 164
+  orig: 8, 164
+  offset: 0, 0
+  index: -1
+TAGUANG77
+  rotate: true
+  xy: 0, 8
+  size: 8, 164
+  orig: 8, 164
+  offset: 0, 0
+  index: -1
+TAGUANG88
+  rotate: true
+  xy: 0, 0
+  size: 8, 164
+  orig: 8, 164
+  offset: 0, 0
+  index: -1

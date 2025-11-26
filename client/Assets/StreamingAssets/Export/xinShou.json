@@ -1,0 +1,164 @@
+{
+"skeleton": {
+	"hash": "DDX5gUwNsfFazyFtiZKHtIN59AI",
+	"spine": "3.8.95",
+	"x": 94.97,
+	"y": -328.98,
+	"width": 180,
+	"height": 189,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root", "x": 7.45, "y": -11.17 },
+	{ "name": "xinShouYinDao", "parent": "root", "length": 121.32, "rotation": 87.51, "x": 51.07, "y": -140.16 },
+	{ "name": "SHOU", "parent": "xinShouYinDao", "length": 117.94, "rotation": 26.05, "x": -165.68, "y": -194.49 },
+	{ "name": "BAIDIAN", "parent": "xinShouYinDao", "length": 57.74, "rotation": -41.7, "x": 137.81, "y": 57.11 },
+	{ "name": "BAIQUAN", "parent": "xinShouYinDao", "length": 86.32, "rotation": 4.78, "x": 137.81, "y": 57.11 }
+],
+"slots": [
+	{ "name": "BAIQUAN111", "bone": "BAIQUAN" },
+	{ "name": "BAIDIAN111", "bone": "BAIDIAN" },
+	{ "name": "SHOU111", "bone": "SHOU" },
+	{ "name": "shouzhi", "bone": "SHOU", "attachment": "shouzhi" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"BAIDIAN111": {
+				"BAIDIAN111": { "rotation": -45.81, "width": 158, "height": 158 },
+				"BAIDIAN222": { "rotation": -45.81, "width": 158, "height": 158 }
+			},
+			"BAIQUAN111": {
+				"BAIQUAN111": { "rotation": -92.29, "width": 358, "height": 358 },
+				"BAIQUAN222": { "rotation": -92.29, "width": 358, "height": 358 }
+			},
+			"SHOU111": {
+				"SHOU111": { "x": 129.07, "y": 16.34, "rotation": -113.57, "width": 245, "height": 303 }
+			},
+			"shouzhi": {
+				"shouzhi": {
+					"x": 107.5,
+					"y": 19.29,
+					"scaleX": 0.9,
+					"scaleY": 0.9,
+					"rotation": -113.57,
+					"width": 200,
+					"height": 210
+				}
+			}
+		}
+	}
+],
+"animations": {
+	"xinShou": {
+		"slots": {
+			"BAIDIAN111": {
+				"color": [
+					{ "time": 0.0667, "color": "ffffff00" },
+					{ "time": 0.3667, "color": "ffffffc5", "curve": "stepped" },
+					{ "time": 0.5, "color": "ffffffc5" },
+					{ "time": 0.9, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0.0667, "name": "BAIDIAN111" }
+				]
+			},
+			"BAIQUAN111": {
+				"color": [
+					{ "time": 0.0667, "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffffcc" },
+					{ "time": 0.8333, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0.0667, "name": "BAIQUAN111" }
+				]
+			},
+			"SHOU111": {
+				"attachment": [
+					{ "name": "SHOU111" }
+				]
+			},
+			"shouzhi": {
+				"attachment": [
+					{ "name": null }
+				]
+			}
+		},
+		"bones": {
+			"SHOU": {
+				"translate": [
+					{},
+					{ "time": 0.5, "x": 49.9, "y": 65.47 },
+					{ "time": 1 }
+				]
+			},
+			"BAIDIAN": {
+				"scale": [
+					{ "time": 0.0667 },
+					{ "time": 0.9, "x": 2, "y": 2 }
+				]
+			},
+			"BAIQUAN": {
+				"scale": [
+					{ "time": 0.0667, "x": 0.5, "y": 0.5 },
+					{ "time": 0.8333, "x": 1.52, "y": 1.52 }
+				]
+			}
+		}
+	},
+	"xinShou2": {
+		"slots": {
+			"BAIDIAN111": {
+				"color": [
+					{ "time": 0.2667, "color": "ffffff00" },
+					{ "time": 0.4, "color": "ffffffc5", "curve": "stepped" },
+					{ "time": 0.5333, "color": "ffffffc5" },
+					{ "time": 0.9, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0.2667, "name": "BAIDIAN222" }
+				]
+			},
+			"BAIQUAN111": {
+				"color": [
+					{ "time": 0.2667, "color": "ffffff00" },
+					{ "time": 0.3667, "color": "ffffffcc" },
+					{ "time": 0.8333, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0.2667, "name": "BAIQUAN222" }
+				]
+			}
+		},
+		"bones": {
+			"SHOU": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "angle": -5 },
+					{ "time": 0.3 }
+				],
+				"translate": [
+					{ "x": 87.31, "y": 63.85, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.3, "x": 137.21, "y": 129.32, "curve": "stepped" },
+					{ "time": 0.6667, "x": 137.21, "y": 129.32, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1, "x": 87.31, "y": 63.85 }
+				]
+			},
+			"BAIDIAN": {
+				"scale": [
+					{ "time": 0.2667 },
+					{ "time": 0.9, "x": 2, "y": 2 }
+				]
+			},
+			"BAIQUAN": {
+				"scale": [
+					{ "time": 0.2667, "x": 0.5, "y": 0.5 },
+					{ "time": 0.8333, "x": 1.52, "y": 1.52 }
+				]
+			}
+		}
+	}
+}
+}

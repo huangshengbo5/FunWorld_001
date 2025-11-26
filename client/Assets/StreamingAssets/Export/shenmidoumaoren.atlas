@@ -1,0 +1,76 @@
+
+shenmidoumaoren.png
+size: 4096,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+da tui you
+  rotate: false
+  xy: 2383, 0
+  size: 230, 312
+  orig: 230, 312
+  offset: 0, 0
+  index: -1
+da tui zuo
+  rotate: false
+  xy: 2191, 656
+  size: 244, 347
+  orig: 244, 347
+  offset: 0, 0
+  index: -1
+shang shen
+  rotate: true
+  xy: 0, 54
+  size: 325, 560
+  orig: 325, 560
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 1254, 22
+  size: 634, 551
+  orig: 634, 551
+  offset: 0, 0
+  index: -1
+wei bo
+  rotate: true
+  xy: 1888, 12
+  size: 561, 495
+  orig: 561, 495
+  offset: 0, 0
+  index: -1
+wei bo 1
+  rotate: true
+  xy: 560, 199
+  size: 180, 694
+  orig: 180, 694
+  offset: 0, 0
+  index: -1
+xiao tui you
+  rotate: false
+  xy: 1955, 640
+  size: 236, 363
+  orig: 236, 363
+  offset: 0, 0
+  index: -1
+xiao tui zuo
+  rotate: false
+  xy: 2383, 312
+  size: 222, 344
+  orig: 222, 344
+  offset: 0, 0
+  index: -1
+yi fu hou
+  rotate: true
+  xy: 1028, 573
+  size: 430, 927
+  orig: 430, 927
+  offset: 0, 0
+  index: -1
+yi fu qian
+  rotate: true
+  xy: 0, 379
+  size: 624, 1028
+  orig: 624, 1028
+  offset: 0, 0
+  index: -1

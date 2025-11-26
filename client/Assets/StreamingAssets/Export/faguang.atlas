@@ -1,0 +1,41 @@
+
+faguang.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+FAGUANG111
+  rotate: false
+  xy: 184, 248
+  size: 145, 142
+  orig: 145, 142
+  offset: 0, 0
+  index: -1
+FAGUANG333
+  rotate: false
+  xy: 0, 193
+  size: 184, 197
+  orig: 184, 197
+  offset: 0, 0
+  index: -1
+FAGUANG444
+  rotate: false
+  xy: 0, 16
+  size: 186, 177
+  orig: 186, 177
+  offset: 0, 0
+  index: -1
+FAGUANG666
+  rotate: true
+  xy: 186, 96
+  size: 152, 139
+  orig: 152, 139
+  offset: 0, 0
+  index: -1
+FAGUANG777
+  rotate: false
+  xy: 186, 0
+  size: 98, 96
+  orig: 98, 96
+  offset: 0, 0
+  index: -1

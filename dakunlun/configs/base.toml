@@ -1,0 +1,23 @@
+env = "dev" #"dev/"test"/"sandbox"/"prod"
+platform = "native" #"native"/"facebook"/"facebook_canvas"
+
+swagger_json = "http://127.0.0.1:8080/swagger/doc.json"
+http_port = 8080
+reqcheck_ttl = 10000  #1000=1秒
+redis_uri = '127.0.0.1:6379'
+redis_password = 'YOUR_REDIS_PASSWORD'
+redis_db = '1'
+redis_cluster_addrs = []
+
+mysql_host = '127.0.0.1'
+mysql_port = 3306
+mysql_user = 'dakunlun'
+mysql_password = 'YOUR_MYSQL_PASSWORD'
+mysql_db = 'dakunlun'
+
+log_file = "server.log"
+log_max_size = 128 #单个文件大小
+log_max_backups = 10
+log_max_age = 3 #保存天数
+log_compress = false #是否压缩
+log_localtime = true  #是否使用本地时区

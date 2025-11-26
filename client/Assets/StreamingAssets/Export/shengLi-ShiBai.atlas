@@ -1,0 +1,90 @@
+
+shengLi-ShiBai.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+CHIBANG
+  rotate: true
+  xy: 751, 9
+  size: 150, 159
+  orig: 150, 159
+  offset: 0, 0
+  index: -1
+CHIBANG222
+  rotate: true
+  xy: 0, 219
+  size: 150, 159
+  orig: 150, 159
+  offset: 0, 0
+  index: -1
+GUANG
+  rotate: false
+  xy: 0, 369
+  size: 445, 283
+  orig: 445, 283
+  offset: 0, 0
+  index: -1
+HEICHIBANG
+  rotate: true
+  xy: 318, 219
+  size: 150, 96
+  orig: 150, 96
+  offset: 0, 0
+  index: -1
+HEIXIN
+  rotate: false
+  xy: 751, 159
+  size: 180, 167
+  orig: 180, 167
+  offset: 0, 0
+  index: -1
+SAOGUANG/SAOGUANG444
+  rotate: true
+  xy: 445, 130
+  size: 265, 306
+  orig: 265, 306
+  offset: 0, 0
+  index: -1
+SAOGUANG/SAOGUANG555
+  rotate: true
+  xy: 445, 395
+  size: 257, 363
+  orig: 257, 363
+  offset: 0, 0
+  index: -1
+SHENGLI
+  rotate: true
+  xy: 910, 0
+  size: 159, 99
+  orig: 159, 99
+  offset: 0, 0
+  index: -1
+SHIBAI
+  rotate: true
+  xy: 808, 326
+  size: 326, 161
+  orig: 326, 161
+  offset: 0, 0
+  index: -1
+XIN
+  rotate: false
+  xy: 159, 220
+  size: 159, 149
+  orig: 159, 149
+  offset: 0, 0
+  index: -1
+XIN222
+  rotate: false
+  xy: 159, 71
+  size: 159, 149
+  orig: 159, 149
+  offset: 0, 0
+  index: -1
+XULI
+  rotate: false
+  xy: 0, 69
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1

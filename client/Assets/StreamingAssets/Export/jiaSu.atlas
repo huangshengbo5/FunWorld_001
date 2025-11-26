@@ -1,0 +1,118 @@
+
+jiaSu.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+DI111
+  rotate: true
+  xy: 761, 512
+  size: 325, 77
+  orig: 325, 77
+  offset: 0, 0
+  index: -1
+FENG1000
+  rotate: false
+  xy: 761, 837
+  size: 98, 271
+  orig: 98, 271
+  offset: 0, 0
+  index: -1
+FENG111
+  rotate: true
+  xy: 443, 181
+  size: 331, 337
+  orig: 331, 337
+  offset: 0, 0
+  index: -1
+FENG222
+  rotate: false
+  xy: 1481, 0
+  size: 403, 348
+  orig: 403, 348
+  offset: 0, 0
+  index: -1
+FENG333
+  rotate: false
+  xy: 1337, 283
+  size: 144, 213
+  orig: 144, 213
+  offset: 0, 0
+  index: -1
+FENG444
+  rotate: true
+  xy: 901, 960
+  size: 656, 677
+  orig: 656, 677
+  offset: 0, 0
+  index: -1
+FENG555
+  rotate: false
+  xy: 0, 1108
+  size: 901, 508
+  orig: 901, 508
+  offset: 0, 0
+  index: -1
+FENG666
+  rotate: true
+  xy: 1578, 715
+  size: 901, 443
+  orig: 901, 443
+  offset: 0, 0
+  index: -1
+FENG777
+  rotate: false
+  xy: 0, 534
+  size: 761, 574
+  orig: 761, 574
+  offset: 0, 0
+  index: -1
+FENG888
+  rotate: true
+  xy: 1521, 348
+  size: 367, 406
+  orig: 367, 406
+  offset: 0, 0
+  index: -1
+FENG999
+  rotate: true
+  xy: 859, 492
+  size: 468, 478
+  orig: 468, 478
+  offset: 0, 0
+  index: -1
+GUANGSHU111
+  rotate: true
+  xy: 0, 229
+  size: 305, 443
+  orig: 305, 443
+  offset: 0, 0
+  index: -1
+GUANGSHU222
+  rotate: false
+  xy: 1337, 496
+  size: 184, 464
+  orig: 184, 464
+  offset: 0, 0
+  index: -1
+QI111
+  rotate: true
+  xy: 1927, 555
+  size: 160, 104
+  orig: 160, 104
+  offset: 0, 0
+  index: -1
+QI222
+  rotate: false
+  xy: 1884, 51
+  size: 160, 131
+  orig: 160, 131
+  offset: 0, 0
+  index: -1
+QI333
+  rotate: true
+  xy: 1884, 182
+  size: 166, 155
+  orig: 166, 155
+  offset: 0, 0
+  index: -1

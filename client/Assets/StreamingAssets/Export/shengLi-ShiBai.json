@@ -1,0 +1,1188 @@
+{
+"skeleton": {
+	"hash": "QenCbFCMbvrRN8NFvMHRj5Fr3j4",
+	"spine": "3.8.95",
+	"x": -604.61,
+	"y": -551.35,
+	"width": 1209.47,
+	"height": 809.88,
+	"images": "./images/",
+	"audio": "D:/幻视/游戏技能特效/特效（SPINE3.8.95）/通用特效/胜利失败"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "shengLi-ShiBai", "parent": "root", "length": 163.19, "rotation": 89.25, "x": -0.53, "y": -40.5 },
+	{ "name": "SHENGLI", "parent": "shengLi-ShiBai", "length": 124.54, "rotation": -0.23 },
+	{ "name": "GUANG", "parent": "shengLi-ShiBai", "length": 77.32, "rotation": 2.34, "x": 0.92, "y": -22.42 },
+	{ "name": "XIN", "parent": "shengLi-ShiBai", "length": 137.42, "rotation": -0.14 },
+	{ "name": "CHIBANG", "parent": "shengLi-ShiBai", "length": 122.4, "rotation": -135.29 },
+	{ "name": "CHIBANG2", "parent": "shengLi-ShiBai", "length": 122.4, "rotation": -42.68, "scaleX": -1 },
+	{ "name": "BAIQUAN", "parent": "root", "length": 58.18 },
+	{ "name": "BAIQUAN2", "parent": "root", "length": 58.18 },
+	{ "name": "SAOGUANG", "parent": "shengLi-ShiBai", "length": 193.6, "rotation": 78.41, "x": -11.41, "y": -16.96 },
+	{ "name": "SAOGUANG2", "parent": "shengLi-ShiBai", "length": 193.6, "rotation": 78.41, "x": -11.41, "y": -16.96 }
+],
+"slots": [
+	{ "name": "CHIBANG", "bone": "CHIBANG", "attachment": "CHIBANG" },
+	{ "name": "CHIBANG2", "bone": "CHIBANG2", "attachment": "CHIBANG" },
+	{ "name": "CHIBANG223", "bone": "CHIBANG2" },
+	{ "name": "CHIBANG222", "bone": "CHIBANG" },
+	{ "name": "HEIXIN", "bone": "XIN", "attachment": "XIN" },
+	{ "name": "XIN222", "bone": "XIN" },
+	{ "name": "SAOGUANG111", "bone": "SAOGUANG" },
+	{ "name": "SAOGUANG112", "bone": "SAOGUANG2" },
+	{ "name": "GUANG", "bone": "GUANG" },
+	{ "name": "XULI", "bone": "BAIQUAN" },
+	{ "name": "XULI2", "bone": "BAIQUAN2" },
+	{ "name": "SHENGLI", "bone": "SHENGLI" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"CHIBANG": {
+				"CHIBANG": { "x": 272.67, "y": 73, "width": 499, "height": 529 },
+				"HEICHIBANG": { "x": 272.67, "y": -110.98, "width": 501, "height": 321 }
+			},
+			"CHIBANG2": {
+				"CHIBANG": { "x": 272.67, "y": 73, "width": 499, "height": 529 },
+				"HEICHIBANG": { "x": 272.67, "y": -110.98, "width": 501, "height": 321 }
+			},
+			"CHIBANG222": {
+				"CHIBANG222": { "x": 272.67, "y": 73, "width": 499, "height": 529 }
+			},
+			"CHIBANG223": {
+				"CHIBANG222": { "x": 272.67, "y": 73, "width": 499, "height": 529 }
+			},
+			"GUANG": {
+				"GUANG": { "x": 39.19, "y": -26.65, "rotation": -91.59, "width": 1484, "height": 942 }
+			},
+			"HEIXIN": {
+				"HEIXIN": { "rotation": -89.1, "width": 599, "height": 557 },
+				"XIN": { "x": 51.52, "y": 0.81, "rotation": -89.1, "width": 530, "height": 495 }
+			},
+			"SAOGUANG111": {
+				"SAOGUANG/SAOGUANG444": { "x": 48.59, "y": -368.73, "rotation": -90, "width": 882, "height": 1019 },
+				"SAOGUANG/SAOGUANG555": { "x": 45.59, "y": -358.73, "rotation": -90, "width": 858, "height": 1211 }
+			},
+			"SAOGUANG112": {
+				"SAOGUANG/SAOGUANG444": { "x": 48.59, "y": -368.73, "rotation": -90, "width": 882, "height": 1019 },
+				"SAOGUANG/SAOGUANG555": { "x": 45.59, "y": -358.73, "rotation": -90, "width": 858, "height": 1211 }
+			},
+			"SHENGLI": {
+				"SHENGLI": { "x": -8.62, "y": -0.15, "rotation": -89.01, "width": 530, "height": 331 },
+				"SHIBAI": { "x": 2.31, "y": 23.27, "rotation": -89.01, "width": 1085, "height": 535 }
+			},
+			"XIN222": {
+				"XIN222": { "x": 51.52, "y": 0.81, "rotation": -89.1, "width": 530, "height": 495 }
+			},
+			"XULI": {
+				"XULI": { "y": 0.5, "width": 500, "height": 499 }
+			},
+			"XULI2": {
+				"XULI": { "y": 0.5, "width": 500, "height": 499 }
+			}
+		}
+	}
+],
+"animations": {
+	"shengLi1": {
+		"slots": {
+			"CHIBANG222": {
+				"color": [
+					{ "time": 0.3333, "color": "ffffff00" },
+					{ "time": 0.6667, "color": "ffffffff" },
+					{ "time": 1, "color": "ffffff37" }
+				],
+				"attachment": [
+					{ "time": 0.3333, "name": "CHIBANG222" }
+				]
+			},
+			"CHIBANG223": {
+				"color": [
+					{ "time": 0.3333, "color": "ffffff00" },
+					{ "time": 0.6667, "color": "ffffffff" },
+					{ "time": 1, "color": "ffffff37" }
+				],
+				"attachment": [
+					{ "time": 0.3333, "name": "CHIBANG222" }
+				]
+			},
+			"GUANG": {
+				"color": [
+					{ "time": 0.3333, "color": "ffffff00" },
+					{ "time": 0.6, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0.3333, "name": "GUANG" }
+				]
+			},
+			"SAOGUANG111": {
+				"color": [
+					{ "time": 0.4667, "color": "ffffff00" },
+					{ "time": 0.5667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.8333, "color": "ffffffff" },
+					{ "time": 1.0667, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0.4667, "name": "SAOGUANG/SAOGUANG555" }
+				]
+			},
+			"SAOGUANG112": {
+				"color": [
+					{ "time": 0.4667, "color": "ffffff00" },
+					{ "time": 0.5667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.8333, "color": "ffffffff" },
+					{ "time": 1.0667, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0.4667, "name": "SAOGUANG/SAOGUANG444" }
+				]
+			},
+			"SHENGLI": {
+				"color": [
+					{ "time": 0.0333, "color": "ffffff00" },
+					{ "time": 0.5, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0.0333, "name": "SHENGLI" }
+				]
+			},
+			"XIN222": {
+				"color": [
+					{ "color": "ffffff46" },
+					{ "time": 0.3333, "color": "ffffffff" },
+					{ "time": 1, "color": "ffffff37" }
+				],
+				"attachment": [
+					{ "name": "XIN222" }
+				]
+			},
+			"XULI": {
+				"color": [
+					{ "time": 0.5, "color": "ffffff00" },
+					{ "time": 0.6667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.8333, "color": "ffffffff" },
+					{ "time": 1, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0.5, "name": "XULI" }
+				]
+			},
+			"XULI2": {
+				"color": [
+					{ "time": 0.7667, "color": "f8ff6500" },
+					{ "time": 0.9333, "color": "f8ff6557" }
+				],
+				"attachment": [
+					{ "time": 0.7667, "name": "XULI" }
+				]
+			}
+		},
+		"bones": {
+			"shengLi-ShiBai": {
+				"translate": [
+					{},
+					{ "time": 0.5, "x": 2.21, "y": 167.82 },
+					{ "time": 0.7333, "x": 1.92, "y": 146.19 }
+				]
+			},
+			"CHIBANG": {
+				"rotate": [
+					{ "curve": 0.667, "c2": 0.34, "c3": 0.561, "c4": 0.62 },
+					{ "time": 0.5, "angle": 38.29 },
+					{ "time": 0.6667, "angle": 30.39 },
+					{ "time": 0.8333, "angle": 38.29 }
+				]
+			},
+			"GUANG": {
+				"scale": [
+					{ "time": 0.3333, "x": 0.8, "y": 0.8 },
+					{ "time": 0.6, "x": 1.5, "y": 1.5 },
+					{ "time": 1, "x": 1.8, "y": 1.8 }
+				]
+			},
+			"SHENGLI": {
+				"rotate": [
+					{ "angle": 0.23 },
+					{ "time": 0.1, "angle": -44.77 },
+					{ "time": 0.2, "angle": -89.77 },
+					{ "time": 0.3, "angle": -143.77 },
+					{ "time": 0.4, "angle": 120.23 },
+					{ "time": 0.5, "angle": 0.47 }
+				],
+				"scale": [
+					{ "x": 20, "y": 20 },
+					{ "time": 0.5, "x": 1.2, "y": 1.2 },
+					{ "time": 0.7333, "x": 1.3, "y": 1.3 },
+					{ "time": 1, "x": 1.1, "y": 1.1 }
+				]
+			},
+			"CHIBANG2": {
+				"rotate": [
+					{ "curve": 0.667, "c2": 0.34, "c3": 0.561, "c4": 0.62 },
+					{ "time": 0.5, "angle": -37.22 },
+					{ "time": 0.6667, "angle": -28.35 },
+					{ "time": 0.8333, "angle": -37.22 }
+				]
+			},
+			"BAIQUAN": {
+				"translate": [
+					{ "time": 0.5, "y": 106.17 }
+				],
+				"scale": [
+					{ "time": 0.5, "x": 0.6, "y": 0.6 },
+					{ "time": 1, "x": 15, "y": 15 }
+				]
+			},
+			"BAIQUAN2": {
+				"translate": [
+					{ "time": 0.7667, "y": 106.17 }
+				],
+				"scale": [
+					{ "time": 0.7667, "x": 0.6, "y": 0.6 }
+				]
+			},
+			"SAOGUANG": {
+				"rotate": [
+					{ "time": 0.4667, "angle": -78.41 },
+					{ "time": 1.0667, "angle": -123.41 }
+				],
+				"scale": [
+					{ "time": 0.4667, "x": 1.5, "y": 1.5 },
+					{ "time": 0.8333, "x": 2, "y": 2 },
+					{ "time": 1.0667, "x": 1.7, "y": 1.7 }
+				]
+			},
+			"SAOGUANG2": {
+				"rotate": [
+					{ "time": 0.4667, "angle": 101.59 },
+					{ "time": 1.0667, "angle": 56.59 }
+				],
+				"scale": [
+					{ "time": 0.4667, "x": 1.5, "y": 1.5 },
+					{ "time": 0.8333, "x": 2, "y": 2 },
+					{ "time": 1.0667, "x": 1.7, "y": 1.7 }
+				]
+			}
+		}
+	},
+	"shengLi2": {
+		"slots": {
+			"CHIBANG222": {
+				"color": [
+					{ "color": "ffffff37" }
+				],
+				"attachment": [
+					{ "name": "CHIBANG222" }
+				]
+			},
+			"CHIBANG223": {
+				"color": [
+					{ "color": "ffffff37" }
+				],
+				"attachment": [
+					{ "name": "CHIBANG222" }
+				]
+			},
+			"GUANG": {
+				"attachment": [
+					{ "name": "GUANG" }
+				]
+			},
+			"SAOGUANG111": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.1667, "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.8, "color": "ffffffff" },
+					{ "time": 1.1667, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "SAOGUANG/SAOGUANG555" }
+				]
+			},
+			"SAOGUANG112": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.1667, "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.7667, "color": "ffffffff" },
+					{ "time": 1.1667, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "SAOGUANG/SAOGUANG444" }
+				]
+			},
+			"SHENGLI": {
+				"attachment": [
+					{ "name": "SHENGLI" }
+				]
+			},
+			"XIN222": {
+				"color": [
+					{ "color": "ffffff37" }
+				],
+				"attachment": [
+					{ "name": "XIN222" }
+				]
+			},
+			"XULI": {
+				"color": [
+					{ "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "XULI" }
+				]
+			},
+			"XULI2": {
+				"color": [
+					{ "color": "f8ff6557" }
+				],
+				"attachment": [
+					{ "name": "XULI" }
+				]
+			}
+		},
+		"bones": {
+			"shengLi-ShiBai": {
+				"translate": [
+					{ "x": 1.92, "y": 146.19 },
+					{ "time": 0.7333, "x": 2.21, "y": 167.82 },
+					{ "time": 1.3333, "x": 1.92, "y": 146.19 }
+				]
+			},
+			"CHIBANG": {
+				"rotate": [
+					{ "angle": 38.29 },
+					{ "time": 0.6667, "angle": 30.39 },
+					{ "time": 1.3333, "angle": 38.29 }
+				]
+			},
+			"GUANG": {
+				"scale": [
+					{ "x": 1.8, "y": 1.8 },
+					{ "time": 0.6667, "x": 0.8, "y": 0.8 },
+					{ "time": 1.3333, "x": 1.8, "y": 1.8 }
+				]
+			},
+			"SHENGLI": {
+				"rotate": [
+					{ "angle": 0.47 }
+				],
+				"scale": [
+					{ "x": 1.1, "y": 1.1 },
+					{ "time": 0.6667, "x": 1.3, "y": 1.3 },
+					{ "time": 1.3333, "x": 1.1, "y": 1.1 }
+				]
+			},
+			"CHIBANG2": {
+				"rotate": [
+					{ "angle": -37.22 },
+					{ "time": 0.6667, "angle": -28.35 },
+					{ "time": 1.3333, "angle": -37.22 }
+				]
+			},
+			"BAIQUAN": {
+				"translate": [
+					{ "y": 106.17 }
+				],
+				"scale": [
+					{ "x": 15, "y": 15 }
+				]
+			},
+			"BAIQUAN2": {
+				"translate": [
+					{ "y": 106.17 }
+				],
+				"scale": [
+					{ "x": 0.6, "y": 0.6 }
+				]
+			},
+			"SAOGUANG": {
+				"rotate": [
+					{ "angle": -123.41, "curve": 0.67, "c2": 0.32, "c3": 0.952, "c4": 0.56 },
+					{ "time": 0.1667, "angle": -78.41 },
+					{ "time": 1.1667, "angle": -123.41 }
+				],
+				"scale": [
+					{ "x": 1.7, "y": 1.7, "curve": 0.67, "c2": 0.32, "c3": 0.952, "c4": 0.56 },
+					{ "time": 0.1667, "x": 1.5, "y": 1.5 },
+					{ "time": 0.8, "x": 2, "y": 2 },
+					{ "time": 1.1667, "x": 1.7, "y": 1.7 }
+				]
+			},
+			"SAOGUANG2": {
+				"rotate": [
+					{ "angle": 56.59, "curve": 0.67, "c2": 0.32, "c3": 0.952, "c4": 0.56 },
+					{ "time": 0.1667, "angle": 101.59 },
+					{ "time": 1.1667, "angle": 56.59 }
+				],
+				"scale": [
+					{ "x": 1.7, "y": 1.7, "curve": 0.67, "c2": 0.32, "c3": 0.952, "c4": 0.56 },
+					{ "time": 0.1667, "x": 1.5, "y": 1.5 },
+					{ "time": 0.7667, "x": 2, "y": 2 },
+					{ "time": 1.1667, "x": 1.7, "y": 1.7 }
+				]
+			}
+		}
+	},
+	"shengLi3": {
+		"slots": {
+			"CHIBANG222": {
+				"color": [
+					{ "color": "ffffff37" }
+				],
+				"attachment": [
+					{ "name": "CHIBANG222" }
+				]
+			},
+			"CHIBANG223": {
+				"color": [
+					{ "color": "ffffff37" }
+				],
+				"attachment": [
+					{ "name": "CHIBANG222" }
+				]
+			},
+			"GUANG": {
+				"attachment": [
+					{ "name": "GUANG" }
+				]
+			},
+			"SAOGUANG111": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.1667, "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.8, "color": "ffffffff" },
+					{ "time": 1.1667, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "SAOGUANG/SAOGUANG444" },
+					{ "time": 1.3333, "name": "SAOGUANG/SAOGUANG555" }
+				]
+			},
+			"SAOGUANG112": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.1667, "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.7667, "color": "ffffffff" },
+					{ "time": 1.1667, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "SAOGUANG/SAOGUANG555" },
+					{ "time": 1.3333, "name": "SAOGUANG/SAOGUANG444" }
+				]
+			},
+			"SHENGLI": {
+				"attachment": [
+					{ "name": "SHENGLI" }
+				]
+			},
+			"XIN222": {
+				"color": [
+					{ "color": "ffffff37" }
+				],
+				"attachment": [
+					{ "name": "XIN222" }
+				]
+			},
+			"XULI": {
+				"color": [
+					{ "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "XULI" }
+				]
+			},
+			"XULI2": {
+				"color": [
+					{ "color": "f8ff6557" }
+				],
+				"attachment": [
+					{ "name": "XULI" }
+				]
+			}
+		},
+		"bones": {
+			"shengLi-ShiBai": {
+				"translate": [
+					{ "x": 1.92, "y": 146.19 },
+					{ "time": 0.7333, "x": 2.21, "y": 167.82 },
+					{ "time": 1.3333, "x": 1.92, "y": 146.19 }
+				]
+			},
+			"CHIBANG": {
+				"rotate": [
+					{ "angle": 38.29 },
+					{ "time": 0.6667, "angle": 30.39 },
+					{ "time": 1.3333, "angle": 38.29 }
+				]
+			},
+			"GUANG": {
+				"scale": [
+					{ "x": 1.8, "y": 1.8 },
+					{ "time": 0.6667, "x": 0.8, "y": 0.8 },
+					{ "time": 1.3333, "x": 1.8, "y": 1.8 }
+				]
+			},
+			"SHENGLI": {
+				"rotate": [
+					{ "angle": 0.47 }
+				],
+				"scale": [
+					{ "x": 1.1, "y": 1.1 },
+					{ "time": 0.6667, "x": 1.3, "y": 1.3 },
+					{ "time": 1.3333, "x": 1.1, "y": 1.1 }
+				]
+			},
+			"CHIBANG2": {
+				"rotate": [
+					{ "angle": -37.22 },
+					{ "time": 0.6667, "angle": -28.35 },
+					{ "time": 1.3333, "angle": -37.22 }
+				]
+			},
+			"BAIQUAN": {
+				"translate": [
+					{ "y": 106.17 }
+				],
+				"scale": [
+					{ "x": 15, "y": 15 }
+				]
+			},
+			"BAIQUAN2": {
+				"translate": [
+					{ "y": 106.17 }
+				],
+				"scale": [
+					{ "x": 0.6, "y": 0.6 }
+				]
+			},
+			"SAOGUANG": {
+				"rotate": [
+					{ "angle": -123.41, "curve": 0.67, "c2": 0.32, "c3": 0.952, "c4": 0.56 },
+					{ "time": 0.1667, "angle": -78.41 },
+					{ "time": 1.1667, "angle": -123.41 }
+				],
+				"scale": [
+					{ "x": 1.7, "y": 1.7, "curve": 0.67, "c2": 0.32, "c3": 0.952, "c4": 0.56 },
+					{ "time": 0.1667, "x": 1.5, "y": 1.5 },
+					{ "time": 0.8, "x": 2, "y": 2 },
+					{ "time": 1.1667, "x": 1.7, "y": 1.7 }
+				]
+			},
+			"SAOGUANG2": {
+				"rotate": [
+					{ "angle": 56.59, "curve": 0.67, "c2": 0.32, "c3": 0.952, "c4": 0.56 },
+					{ "time": 0.1667, "angle": 101.59 },
+					{ "time": 1.1667, "angle": 56.59 }
+				],
+				"scale": [
+					{ "x": 1.7, "y": 1.7, "curve": 0.67, "c2": 0.32, "c3": 0.952, "c4": 0.56 },
+					{ "time": 0.1667, "x": 1.5, "y": 1.5 },
+					{ "time": 0.7667, "x": 2, "y": 2 },
+					{ "time": 1.1667, "x": 1.7, "y": 1.7 }
+				]
+			}
+		}
+	},
+	"shengLi4": {
+		"slots": {
+			"CHIBANG222": {
+				"color": [
+					{ "color": "ffffff37" }
+				],
+				"attachment": [
+					{ "name": "CHIBANG222" }
+				]
+			},
+			"CHIBANG223": {
+				"color": [
+					{ "color": "ffffff37" }
+				],
+				"attachment": [
+					{ "name": "CHIBANG222" }
+				]
+			},
+			"GUANG": {
+				"attachment": [
+					{ "name": "GUANG" }
+				]
+			},
+			"SAOGUANG111": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.1667, "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.8, "color": "ffffffff" },
+					{ "time": 1.1667, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 1.3333, "name": "SAOGUANG/SAOGUANG555" }
+				]
+			},
+			"SAOGUANG112": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.1667, "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.7667, "color": "ffffffff" },
+					{ "time": 1.1667, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 1.3333, "name": "SAOGUANG/SAOGUANG444" }
+				]
+			},
+			"SHENGLI": {
+				"attachment": [
+					{ "name": "SHENGLI" }
+				]
+			},
+			"XIN222": {
+				"color": [
+					{ "color": "ffffff37" }
+				],
+				"attachment": [
+					{ "name": "XIN222" }
+				]
+			},
+			"XULI": {
+				"color": [
+					{ "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "XULI" }
+				]
+			},
+			"XULI2": {
+				"color": [
+					{ "color": "f8ff6557" }
+				],
+				"attachment": [
+					{ "name": "XULI" }
+				]
+			}
+		},
+		"bones": {
+			"shengLi-ShiBai": {
+				"translate": [
+					{ "x": 1.92, "y": 146.19 },
+					{ "time": 0.7333, "x": 2.21, "y": 167.82 },
+					{ "time": 1.3333, "x": 1.92, "y": 146.19 }
+				]
+			},
+			"CHIBANG": {
+				"rotate": [
+					{ "angle": 38.29 },
+					{ "time": 0.6667, "angle": 30.39 },
+					{ "time": 1.3333, "angle": 38.29 }
+				]
+			},
+			"GUANG": {
+				"scale": [
+					{ "x": 1.8, "y": 1.8 },
+					{ "time": 0.6667, "x": 1.2, "y": 1.2 },
+					{ "time": 1.3333, "x": 1.8, "y": 1.8 }
+				]
+			},
+			"SHENGLI": {
+				"rotate": [
+					{ "angle": 0.47 }
+				],
+				"scale": [
+					{ "x": 1.1, "y": 1.1 },
+					{ "time": 0.6667, "x": 1.3, "y": 1.3 },
+					{ "time": 1.3333, "x": 1.1, "y": 1.1 }
+				]
+			},
+			"CHIBANG2": {
+				"rotate": [
+					{ "angle": -37.22 },
+					{ "time": 0.6667, "angle": -28.35 },
+					{ "time": 1.3333, "angle": -37.22 }
+				]
+			},
+			"BAIQUAN": {
+				"translate": [
+					{ "y": 106.17 }
+				],
+				"scale": [
+					{ "x": 15, "y": 15 }
+				]
+			},
+			"BAIQUAN2": {
+				"translate": [
+					{ "y": 106.17 }
+				],
+				"scale": [
+					{ "x": 0.6, "y": 0.6 }
+				]
+			},
+			"SAOGUANG": {
+				"rotate": [
+					{ "angle": -123.41, "curve": 0.67, "c2": 0.32, "c3": 0.952, "c4": 0.56 },
+					{ "time": 0.1667, "angle": -78.41 },
+					{ "time": 1.1667, "angle": -123.41 }
+				],
+				"scale": [
+					{ "x": 1.7, "y": 1.7, "curve": 0.67, "c2": 0.32, "c3": 0.952, "c4": 0.56 },
+					{ "time": 0.1667, "x": 1.5, "y": 1.5 },
+					{ "time": 0.8, "x": 2, "y": 2 },
+					{ "time": 1.1667, "x": 1.7, "y": 1.7 }
+				]
+			},
+			"SAOGUANG2": {
+				"rotate": [
+					{ "angle": 56.59, "curve": 0.67, "c2": 0.32, "c3": 0.952, "c4": 0.56 },
+					{ "time": 0.1667, "angle": 101.59 },
+					{ "time": 1.1667, "angle": 56.59 }
+				],
+				"scale": [
+					{ "x": 1.7, "y": 1.7, "curve": 0.67, "c2": 0.32, "c3": 0.952, "c4": 0.56 },
+					{ "time": 0.1667, "x": 1.5, "y": 1.5 },
+					{ "time": 0.7667, "x": 2, "y": 2 },
+					{ "time": 1.1667, "x": 1.7, "y": 1.7 }
+				]
+			}
+		}
+	},
+	"shengLi5": {
+		"slots": {
+			"CHIBANG": {
+				"color": [
+					{ "time": 0.2667, "color": "ffffffff" },
+					{ "time": 0.6, "color": "ffffff00" }
+				]
+			},
+			"CHIBANG2": {
+				"color": [
+					{ "time": 0.2667, "color": "ffffffff" },
+					{ "time": 0.6, "color": "ffffff00" }
+				]
+			},
+			"CHIBANG222": {
+				"color": [
+					{ "color": "ffffff37" },
+					{ "time": 0.6, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "CHIBANG222" }
+				]
+			},
+			"CHIBANG223": {
+				"color": [
+					{ "color": "ffffff37" },
+					{ "time": 0.6, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "CHIBANG222" }
+				]
+			},
+			"GUANG": {
+				"color": [
+					{ "time": 0.1, "color": "ffffffff" },
+					{ "time": 0.4333, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "GUANG" }
+				]
+			},
+			"HEIXIN": {
+				"color": [
+					{ "time": 0.2667, "color": "ffffffff" },
+					{ "time": 0.6, "color": "ffffff00" }
+				]
+			},
+			"SAOGUANG111": {
+				"color": [
+					{ "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "SAOGUANG/SAOGUANG555" }
+				]
+			},
+			"SAOGUANG112": {
+				"color": [
+					{ "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "SAOGUANG/SAOGUANG444" }
+				]
+			},
+			"SHENGLI": {
+				"color": [
+					{ "time": 0.4333, "color": "ffffffff" },
+					{ "time": 0.6, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "SHENGLI" }
+				]
+			},
+			"XIN222": {
+				"color": [
+					{ "color": "ffffff37" },
+					{ "time": 0.6, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "XIN222" }
+				]
+			},
+			"XULI": {
+				"color": [
+					{ "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "XULI" }
+				]
+			}
+		},
+		"bones": {
+			"shengLi-ShiBai": {
+				"translate": [
+					{ "x": 1.92, "y": 146.19 },
+					{ "time": 0.6, "x": 2.21, "y": 167.82 }
+				]
+			},
+			"CHIBANG": {
+				"rotate": [
+					{ "angle": 38.29 }
+				]
+			},
+			"GUANG": {
+				"scale": [
+					{ "x": 1.8, "y": 1.8 },
+					{ "time": 0.4333 }
+				]
+			},
+			"SHENGLI": {
+				"rotate": [
+					{ "angle": 0.47 }
+				],
+				"scale": [
+					{ "x": 1.1, "y": 1.1 }
+				]
+			},
+			"CHIBANG2": {
+				"rotate": [
+					{ "angle": -37.22 }
+				]
+			},
+			"BAIQUAN": {
+				"translate": [
+					{ "y": 106.17 }
+				],
+				"scale": [
+					{ "x": 15, "y": 15 }
+				]
+			},
+			"SAOGUANG": {
+				"rotate": [
+					{ "angle": -123.41 }
+				],
+				"scale": [
+					{ "x": 1.7, "y": 1.7 }
+				]
+			},
+			"SAOGUANG2": {
+				"rotate": [
+					{ "angle": 56.59 }
+				],
+				"scale": [
+					{ "x": 1.7, "y": 1.7 }
+				]
+			}
+		}
+	},
+	"shiBai1": {
+		"slots": {
+			"CHIBANG": {
+				"attachment": [
+					{ "name": "HEICHIBANG" }
+				]
+			},
+			"CHIBANG2": {
+				"attachment": [
+					{ "name": "HEICHIBANG" }
+				]
+			},
+			"GUANG": {
+				"color": [
+					{ "time": 0.3333, "color": "ffffff00" }
+				]
+			},
+			"HEIXIN": {
+				"attachment": [
+					{ "name": "HEIXIN" }
+				]
+			},
+			"SHENGLI": {
+				"color": [
+					{ "time": 0.0333, "color": "ffffff00" },
+					{ "time": 0.5, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0.0333, "name": "SHIBAI" }
+				]
+			}
+		},
+		"bones": {
+			"shengLi-ShiBai": {
+				"translate": [
+					{ "x": 0.69, "y": 52.29 },
+					{ "time": 0.5, "x": 2.96, "y": 225.27 }
+				]
+			},
+			"CHIBANG": {
+				"rotate": [
+					{ "angle": 61.79 },
+					{ "time": 0.5, "angle": 8.86 }
+				]
+			},
+			"GUANG": {
+				"scale": [
+					{ "time": 0.3333, "x": 0.5, "y": 0.5 }
+				]
+			},
+			"SHENGLI": {
+				"rotate": [
+					{ "angle": -79.77 },
+					{ "time": 0.1333, "angle": -119.77 },
+					{ "time": 0.2333, "angle": -179.77 },
+					{ "time": 0.3667, "angle": 90.23 },
+					{ "time": 0.5, "angle": 8.23 }
+				],
+				"translate": [
+					{ "x": -12 }
+				],
+				"scale": [
+					{ "x": 20, "y": 20 },
+					{ "time": 0.5, "x": 1.2, "y": 1.2 }
+				]
+			},
+			"CHIBANG2": {
+				"rotate": [
+					{ "angle": -63.47 },
+					{ "time": 0.5, "angle": -11.91 }
+				]
+			}
+		}
+	},
+	"shiBai2": {
+		"slots": {
+			"CHIBANG": {
+				"attachment": [
+					{ "name": "HEICHIBANG" }
+				]
+			},
+			"CHIBANG2": {
+				"attachment": [
+					{ "name": "HEICHIBANG" }
+				]
+			},
+			"GUANG": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.1333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.1333, "color": "ffffffff" },
+					{ "time": 1.3333, "color": "ffffff00" }
+				]
+			},
+			"HEIXIN": {
+				"attachment": [
+					{ "name": "HEIXIN" }
+				]
+			},
+			"SHENGLI": {
+				"attachment": [
+					{ "name": "SHIBAI" }
+				]
+			},
+			"XULI": {
+				"color": [
+					{ "time": 0.0333, "color": "ffffff00" },
+					{ "time": 0.3333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.6333, "color": "ffffffff" },
+					{ "time": 0.9, "color": "ffffff00" }
+				]
+			},
+			"XULI2": {
+				"color": [
+					{ "time": 0.5333, "color": "200b3100" },
+					{ "time": 0.8333, "color": "1f0b318b" }
+				]
+			}
+		},
+		"bones": {
+			"shengLi-ShiBai": {
+				"translate": [
+					{ "x": 2.96, "y": 225.27 },
+					{ "time": 0.6667, "x": 2.41, "y": 182.88 },
+					{ "time": 1.3333, "x": 2.96, "y": 225.27 }
+				]
+			},
+			"CHIBANG": {
+				"rotate": [
+					{ "angle": 8.86 },
+					{ "time": 0.3, "angle": 12.52 },
+					{ "time": 0.5333, "angle": 8.86 }
+				]
+			},
+			"GUANG": {
+				"scale": [
+					{ "x": 0.5, "y": 0.5 },
+					{ "time": 0.1333 },
+					{ "time": 0.8333, "x": 1.3, "y": 1.3 },
+					{ "time": 1.3333, "x": 0.5, "y": 0.5 }
+				]
+			},
+			"SHENGLI": {
+				"rotate": [
+					{ "angle": 8.23 }
+				],
+				"translate": [
+					{ "x": -12 }
+				],
+				"scale": [
+					{ "x": 1.2, "y": 1.2 },
+					{ "time": 0.6667, "x": 1.3, "y": 1.3 },
+					{ "time": 1.3333, "x": 1.2, "y": 1.2 }
+				]
+			},
+			"CHIBANG2": {
+				"rotate": [
+					{ "angle": -11.91 },
+					{ "time": 0.3, "angle": -13.84 },
+					{ "time": 0.5333, "angle": -11.91 }
+				]
+			},
+			"BAIQUAN": {
+				"translate": [
+					{ "time": 0.0333, "y": 106.17 }
+				],
+				"scale": [
+					{ "time": 0.0333 },
+					{ "time": 0.9, "x": 15, "y": 15 }
+				]
+			},
+			"BAIQUAN2": {
+				"translate": [
+					{ "time": 0.5333, "y": 106.17 }
+				]
+			}
+		}
+	},
+	"shiBai3": {
+		"slots": {
+			"CHIBANG": {
+				"color": [
+					{ "time": 0.1333, "color": "ffffffff" },
+					{ "time": 0.8333, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "HEICHIBANG" }
+				]
+			},
+			"CHIBANG2": {
+				"color": [
+					{ "time": 0.1333, "color": "ffffffff" },
+					{ "time": 0.8333, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "HEICHIBANG" }
+				]
+			},
+			"GUANG": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.0667, "color": "ffffffff" },
+					{ "time": 0.5, "color": "ffffff00" }
+				]
+			},
+			"HEIXIN": {
+				"color": [
+					{ "time": 0.1333, "color": "ffffffff" },
+					{ "time": 0.8333, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "HEIXIN" }
+				]
+			},
+			"SHENGLI": {
+				"color": [
+					{ "time": 0.3333, "color": "ffffffff" },
+					{ "time": 0.8333, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "SHIBAI" }
+				]
+			},
+			"XULI": {
+				"color": [
+					{ "time": 0.0667, "color": "ffffff00" }
+				]
+			},
+			"XULI2": {
+				"color": [
+					{ "time": 0.0667, "color": "1f0b318b" },
+					{ "time": 0.1333, "color": "200b3100" }
+				]
+			}
+		},
+		"bones": {
+			"shengLi-ShiBai": {
+				"translate": [
+					{ "x": 2.96, "y": 225.27 }
+				]
+			},
+			"CHIBANG": {
+				"rotate": [
+					{ "angle": 8.86 }
+				]
+			},
+			"GUANG": {
+				"scale": [
+					{ "x": 0.5, "y": 0.5 },
+					{ "time": 0.0667, "x": 1.3, "y": 1.3 },
+					{ "time": 0.5 }
+				]
+			},
+			"SHENGLI": {
+				"rotate": [
+					{ "angle": 8.23 }
+				],
+				"translate": [
+					{ "x": -12 }
+				],
+				"scale": [
+					{ "x": 1.2, "y": 1.2 }
+				]
+			},
+			"CHIBANG2": {
+				"rotate": [
+					{ "angle": -11.91 }
+				]
+			},
+			"BAIQUAN": {
+				"translate": [
+					{ "time": 0.0667, "y": 106.17 }
+				],
+				"scale": [
+					{ "time": 0.0667, "x": 15, "y": 15 }
+				]
+			},
+			"BAIQUAN2": {
+				"translate": [
+					{ "time": 0.0667, "y": 106.17 }
+				],
+				"scale": [
+					{ "time": 0.0667 },
+					{ "time": 0.1333, "x": 15, "y": 15 }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,307 @@
+
+gebulin-lan.png
+size: 2048,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+000toufa1
+  rotate: true
+  xy: 1168, 161
+  size: 93, 51
+  orig: 93, 51
+  offset: 0, 0
+  index: -1
+CHEN/CHENTU111
+  rotate: true
+  xy: 1319, 8
+  size: 54, 37
+  orig: 64, 39
+  offset: 9, 1
+  index: -1
+CHEN/CHENTU222
+  rotate: false
+  xy: 1191, 131
+  size: 61, 28
+  orig: 66, 29
+  offset: 3, 1
+  index: -1
+CHEN/CHENTU333
+  rotate: true
+  xy: 1282, 64
+  size: 71, 36
+  orig: 72, 38
+  offset: 0, 1
+  index: -1
+CHEN/CHENTU444
+  rotate: false
+  xy: 1173, 7
+  size: 66, 42
+  orig: 68, 42
+  offset: 2, 0
+  index: -1
+CHEN/CHENTU555
+  rotate: false
+  xy: 1254, 137
+  size: 38, 41
+  orig: 40, 42
+  offset: 1, 1
+  index: -1
+CHENTU/DUYAN111
+  rotate: true
+  xy: 91, 50
+  size: 204, 70
+  orig: 204, 79
+  offset: 0, 0
+  index: -1
+CHENTU/DUYAN222
+  rotate: true
+  xy: 163, 51
+  size: 203, 74
+  orig: 203, 76
+  offset: 0, 2
+  index: -1
+CHENTU/DUYAN333
+  rotate: true
+  xy: 239, 56
+  size: 198, 72
+  orig: 198, 78
+  offset: 0, 0
+  index: -1
+CHENTU/DUYAN444
+  rotate: true
+  xy: 313, 64
+  size: 190, 68
+  orig: 191, 68
+  offset: 1, 0
+  index: -1
+DAOGUANG111
+  rotate: false
+  xy: 1056, 153
+  size: 55, 101
+  orig: 55, 101
+  offset: 0, 0
+  index: -1
+DAOGUANG222
+  rotate: true
+  xy: 1113, 128
+  size: 31, 76
+  orig: 48, 104
+  offset: 17, 0
+  index: -1
+RENG
+  rotate: true
+  xy: 689, 2
+  size: 112, 129
+  orig: 121, 202
+  offset: 9, 30
+  index: -1
+RENGQUAN
+  rotate: true
+  xy: 887, 12
+  size: 111, 284
+  orig: 111, 284
+  offset: 0, 0
+  index: -1
+gblin_1
+  rotate: false
+  xy: 383, 66
+  size: 150, 188
+  orig: 151, 190
+  offset: 0, 0
+  index: -1
+gblin_10
+  rotate: true
+  xy: 667, 116
+  size: 138, 137
+  orig: 138, 137
+  offset: 0, 0
+  index: -1
+gblin_11
+  rotate: false
+  xy: 539, 2
+  size: 29, 67
+  orig: 29, 67
+  offset: 0, 0
+  index: -1
+gblin_13
+  rotate: false
+  xy: 1211, 55
+  size: 69, 74
+  orig: 69, 74
+  offset: 0, 0
+  index: -1
+gblin_14
+  rotate: true
+  xy: 1373, 146
+  size: 36, 52
+  orig: 37, 52
+  offset: 1, 0
+  index: -1
+gblin_15
+  rotate: true
+  xy: 1173, 51
+  size: 75, 36
+  orig: 75, 36
+  offset: 0, 0
+  index: -1
+gblin_16
+  rotate: true
+  xy: 1334, 141
+  size: 41, 37
+  orig: 42, 37
+  offset: 0, 0
+  index: -1
+gblin_17
+  rotate: false
+  xy: 535, 90
+  size: 130, 164
+  orig: 130, 164
+  offset: 0, 0
+  index: -1
+gblin_18
+  rotate: true
+  xy: 989, 131
+  size: 123, 65
+  orig: 128, 65
+  offset: 0, 0
+  index: -1
+gblin_19
+  rotate: true
+  xy: 1314, 184
+  size: 70, 65
+  orig: 70, 65
+  offset: 0, 0
+  index: -1
+gblin_2
+  rotate: false
+  xy: 820, 10
+  size: 65, 113
+  orig: 67, 113
+  offset: 2, 0
+  index: -1
+gblin_20
+  rotate: false
+  xy: 1241, 3
+  size: 35, 50
+  orig: 35, 50
+  offset: 0, 0
+  index: -1
+gblin_21
+  rotate: true
+  xy: 1277, 182
+  size: 72, 35
+  orig: 72, 35
+  offset: 0, 0
+  index: -1
+gblin_22
+  rotate: false
+  xy: 1278, 4
+  size: 39, 49
+  orig: 39, 49
+  offset: 0, 0
+  index: -1
+gblin_23
+  rotate: false
+  xy: 2, 7
+  size: 87, 247
+  orig: 87, 247
+  offset: 0, 0
+  index: -1
+gblin_24
+  rotate: false
+  xy: 1294, 139
+  size: 38, 41
+  orig: 38, 41
+  offset: 0, 0
+  index: -1
+gblin_25
+  rotate: false
+  xy: 645, 12
+  size: 42, 76
+  orig: 42, 76
+  offset: 0, 0
+  index: -1
+gblin_26
+  rotate: false
+  xy: 250, 2
+  size: 95, 52
+  orig: 95, 52
+  offset: 0, 0
+  index: -1
+gblin_27
+  rotate: true
+  xy: 91, 3
+  size: 45, 73
+  orig: 45, 73
+  offset: 0, 0
+  index: -1
+gblin_28
+  rotate: true
+  xy: 347, 5
+  size: 57, 68
+  orig: 57, 68
+  offset: 0, 0
+  index: -1
+gblin_29
+  rotate: false
+  xy: 535, 71
+  size: 32, 17
+  orig: 32, 17
+  offset: 0, 0
+  index: -1
+gblin_3
+  rotate: true
+  xy: 1113, 161
+  size: 93, 53
+  orig: 93, 53
+  offset: 0, 0
+  index: -1
+gblin_31
+  rotate: true
+  xy: 1320, 71
+  size: 66, 65
+  orig: 66, 65
+  offset: 0, 0
+  index: -1
+gblin_31-2
+  rotate: false
+  xy: 417, 2
+  size: 120, 62
+  orig: 195, 93
+  offset: 28, 12
+  index: -1
+gblin_4
+  rotate: true
+  xy: 166, 2
+  size: 47, 82
+  orig: 47, 82
+  offset: 0, 0
+  index: -1
+gblin_5
+  rotate: false
+  xy: 1221, 180
+  size: 54, 74
+  orig: 54, 74
+  offset: 0, 0
+  index: -1
+gblin_7
+  rotate: false
+  xy: 570, 12
+  size: 73, 76
+  orig: 73, 76
+  offset: 0, 0
+  index: -1
+gblin_8
+  rotate: false
+  xy: 898, 125
+  size: 89, 129
+  orig: 89, 129
+  offset: 0, 0
+  index: -1
+gblin_9
+  rotate: false
+  xy: 806, 125
+  size: 90, 129
+  orig: 90, 129
+  offset: 0, 0
+  index: -1

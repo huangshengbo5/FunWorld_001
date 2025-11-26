@@ -1,0 +1,145 @@
+{
+"skeleton": { "hash": "uCOZMPQxnpCPZvy/s1+XEOzp/W0", "spine": "3.8.95", "images": "./images/", "audio": "" },
+"bones": [
+	{ "name": "root" },
+	{
+		"name": "SHENGJI",
+		"parent": "root",
+		"length": 142.33,
+		"rotation": 89.06,
+		"x": -8.52,
+		"y": -179.48,
+		"scaleX": 1.5,
+		"scaleY": 1.5
+	},
+	{
+		"name": "QUAN",
+		"parent": "SHENGJI",
+		"length": 122.22,
+		"rotation": -1.04,
+		"x": 75.4,
+		"y": -1.12,
+		"scaleX": 1.1
+	},
+	{
+		"name": "GUANGSHU",
+		"parent": "SHENGJI",
+		"length": 120.06,
+		"rotation": 1.94,
+		"x": 30.47,
+		"y": -9.39,
+		"scaleY": 1.3
+	},
+	{ "name": "GUANGDIAN", "parent": "SHENGJI", "length": 101.56, "rotation": 0.94, "x": 67.48, "y": -8.34 }
+],
+"slots": [
+	{ "name": "QUAN111", "bone": "QUAN" },
+	{ "name": "GUANGSHU", "bone": "GUANGSHU" },
+	{ "name": "GUANGDIAN111", "bone": "GUANGDIAN" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"GUANGDIAN111": {
+				"GUANGDIAN111": { "x": 349.57, "y": 3.3, "rotation": -90, "width": 721, "height": 789 },
+				"GUANGDIAN222": { "x": 358.57, "y": 2.8, "rotation": -90, "width": 720, "height": 773 },
+				"GUANGDIAN333": { "x": 400.57, "y": 2.8, "rotation": -90, "width": 726, "height": 818 }
+			},
+			"GUANGSHU": {
+				"GUANGSHU": { "x": 173.17, "y": 4.55, "rotation": -91.01, "width": 792, "height": 521 }
+			},
+			"QUAN111": {
+				"QUAN111": { "x": 202.52, "y": -30.16, "rotation": -88.03, "width": 895, "height": 364 },
+				"QUAN222": { "x": 308.18, "y": -33.02, "rotation": -88.03, "width": 872, "height": 577 },
+				"QUAN333": { "x": 322.61, "y": -30.52, "rotation": -88.03, "width": 897, "height": 608 },
+				"QUAN444": { "x": 410.59, "y": -13.98, "rotation": -88.03, "width": 934, "height": 788 },
+				"QUAN555": { "x": 456.8, "y": -19.39, "rotation": -88.03, "width": 932, "height": 891 },
+				"QUAN666": { "x": 744.2, "y": 17.53, "rotation": -88.03, "width": 653, "height": 161 }
+			}
+		}
+	}
+],
+"events": {
+	"shengJiFaZhen-ChuXian": {},
+	"shengJiFaZhen-XiaoShi": {}
+},
+"animations": {
+	"shengJi-GuangShu": {
+		"slots": {
+			"GUANGDIAN111": {
+				"color": [
+					{ "time": 0.6333, "color": "ffffff00" },
+					{ "time": 0.8, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 1.0667, "color": "ffffffff" },
+					{ "time": 1.1667, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0.6333, "name": "GUANGDIAN111" },
+					{ "time": 0.9333, "name": "GUANGDIAN222" },
+					{ "time": 1.0667, "name": "GUANGDIAN333" }
+				]
+			},
+			"GUANGSHU": {
+				"color": [
+					{ "time": 0.1333, "color": "ffffff00" },
+					{ "time": 0.3, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.8667, "color": "ffffffff" },
+					{ "time": 1, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0.1333, "name": "GUANGSHU" }
+				]
+			},
+			"QUAN111": {
+				"color": [
+					{ "time": 0.6667, "color": "ffffffff" },
+					{ "time": 1.1333, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0.5667, "name": "QUAN111" },
+					{ "time": 0.6667, "name": "QUAN222" },
+					{ "time": 0.7667, "name": "QUAN333" },
+					{ "time": 0.8667, "name": "QUAN444" },
+					{ "time": 0.9667, "name": "QUAN555" },
+					{ "time": 1.0667, "name": "QUAN666" },
+					{ "time": 1.1333, "name": null }
+				]
+			}
+		},
+		"bones": {
+			"GUANGSHU": {
+				"scale": [
+					{ "time": 0.1333 },
+					{ "time": 0.3, "x": 1.3 },
+					{ "time": 0.5333, "x": 1.7 },
+					{ "time": 0.7333, "x": 1.55 },
+					{ "time": 1 }
+				]
+			},
+			"QUAN": {
+				"scale": [
+					{ "time": 0.5667 },
+					{ "time": 1.1333, "x": 1.545 }
+				]
+			},
+			"GUANGDIAN": {
+				"translate": [
+					{ "time": 0.6333 },
+					{ "time": 0.9333, "x": 320.52, "y": 5.25 },
+					{ "time": 1.1667, "x": 1181.31, "y": 19.37 }
+				],
+				"scale": [
+					{ "time": 0.6333 },
+					{ "time": 1, "x": 1.3 },
+					{ "time": 1.1667 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0.0333, "name": "shengJiFaZhen-ChuXian" },
+			{ "time": 1.1667, "name": "shengJiFaZhen-XiaoShi" }
+		]
+	}
+}
+}

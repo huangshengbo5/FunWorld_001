@@ -1,0 +1,11 @@
+inherit_files=["base.toml"]
+
+swagger_json = "http://8.140.113.88:8080/swagger/doc.json"
+env = "test" #"dev/"test"/"sandbox"/"prod"
+
+redis_uri = '127.0.0.1:6379'
+
+mysql_host = '127.0.0.1'
+mysql_port = 3306
+mysql_user = 'dakunlun'
+mysql_password = 'YOUR_MYSQL_PASSWORD'

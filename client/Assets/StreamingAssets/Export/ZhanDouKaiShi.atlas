@@ -1,0 +1,97 @@
+
+ZhanDouKaiShi.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BAO
+  rotate: false
+  xy: 0, 227
+  size: 370, 372
+  orig: 370, 372
+  offset: 0, 0
+  index: -1
+BAO222
+  rotate: false
+  xy: 404, 622
+  size: 370, 372
+  orig: 370, 372
+  offset: 0, 0
+  index: -1
+CHA
+  rotate: false
+  xy: 0, 0
+  size: 226, 227
+  orig: 226, 227
+  offset: 0, 0
+  index: -1
+GUANGBIAN
+  rotate: true
+  xy: 370, 278
+  size: 321, 308
+  orig: 321, 308
+  offset: 0, 0
+  index: -1
+GUANGDI
+  rotate: false
+  xy: 678, 193
+  size: 321, 321
+  orig: 321, 321
+  offset: 0, 0
+  index: -1
+HEITIAO
+  rotate: true
+  xy: 774, 514
+  size: 480, 46
+  orig: 480, 46
+  offset: 0, 0
+  index: -1
+HUIHE111
+  rotate: false
+  xy: 566, 246
+  size: 100, 32
+  orig: 100, 32
+  offset: 0, 0
+  index: -1
+HUIHE222
+  rotate: false
+  xy: 370, 109
+  size: 101, 32
+  orig: 101, 32
+  offset: 0, 0
+  index: -1
+HUIHE333
+  rotate: false
+  xy: 820, 823
+  size: 101, 32
+  orig: 101, 32
+  offset: 0, 0
+  index: -1
+JIGUANG111
+  rotate: false
+  xy: 0, 599
+  size: 404, 395
+  orig: 404, 395
+  offset: 0, 0
+  index: -1
+KAISHI
+  rotate: false
+  xy: 370, 141
+  size: 196, 137
+  orig: 196, 137
+  offset: 0, 0
+  index: -1
+KAIZHAN
+  rotate: false
+  xy: 820, 855
+  size: 198, 139
+  orig: 198, 139
+  offset: 0, 0
+  index: -1
+ZHANDOU
+  rotate: true
+  xy: 226, 31
+  size: 196, 144
+  orig: 196, 144
+  offset: 0, 0
+  index: -1

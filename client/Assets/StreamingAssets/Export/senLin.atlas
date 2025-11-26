@@ -1,0 +1,62 @@
+
+senLin.png
+size: 128,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+YINGHUOCHONG
+  rotate: true
+  xy: 72, 2
+  size: 26, 21
+  orig: 26, 21
+  offset: 0, 0
+  index: -1
+YINGHUOCHONG/GUANG
+  rotate: false
+  xy: 0, 42
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: -1
+YINGHUOCHONG/SHENTI
+  rotate: false
+  xy: 0, 28
+  size: 50, 14
+  orig: 50, 14
+  offset: 0, 0
+  index: -1
+YINGHUOCHONG/TUI
+  rotate: false
+  xy: 0, 0
+  size: 41, 11
+  orig: 41, 11
+  offset: 0, 0
+  index: -1
+YINGHUOCHONG/YOUCHI
+  rotate: false
+  xy: 0, 11
+  size: 36, 17
+  orig: 36, 17
+  offset: 0, 0
+  index: -1
+YINGHUOCHONG/YOUCHU
+  rotate: false
+  xy: 50, 28
+  size: 25, 14
+  orig: 25, 14
+  offset: 0, 0
+  index: -1
+YINGHUOCHONG/ZUOCHI
+  rotate: false
+  xy: 36, 11
+  size: 36, 17
+  orig: 36, 17
+  offset: 0, 0
+  index: -1
+YINGHUOCHONG/ZUOCHU
+  rotate: true
+  xy: 41, 0
+  size: 11, 17
+  orig: 11, 17
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,27 @@
+
+xiaYiGuan.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+JIANTOU
+  rotate: false
+  xy: 0, 43
+  size: 130, 43
+  orig: 130, 43
+  offset: 0, 0
+  index: -1
+JIANTOU222
+  rotate: false
+  xy: 0, 0
+  size: 130, 43
+  orig: 130, 43
+  offset: 0, 0
+  index: -1
+ZI
+  rotate: false
+  xy: 0, 86
+  size: 163, 63
+  orig: 163, 63
+  offset: 0, 0
+  index: -1

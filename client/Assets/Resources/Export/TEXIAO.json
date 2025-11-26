@@ -1,0 +1,109 @@
+{
+"skeleton": {
+	"hash": "DMo190jrgDcbDEvHyXcUr7699Og",
+	"spine": "3.8.95",
+	"x": -970.5,
+	"y": -1133.8,
+	"width": 1921.86,
+	"height": 1965,
+	"images": "./FAGUANGTEXIAO/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root", "scaleX": 3, "scaleY": 3 },
+	{ "name": "guang", "parent": "root", "x": 3.78, "y": 5.78 }
+],
+"slots": [
+	{ "name": "FAGUANG111", "bone": "guang", "attachment": "FAGUANG111" },
+	{ "name": "FAGUANG333", "bone": "guang", "attachment": "FAGUANG333" },
+	{ "name": "FAGUANG444", "bone": "guang", "attachment": "FAGUANG444" },
+	{ "name": "FAGUANG666", "bone": "guang", "attachment": "FAGUANG666" },
+	{ "name": "FAGUANG777", "bone": "guang", "attachment": "FAGUANG777" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"FAGUANG111": {
+				"FAGUANG111": { "x": -16.71, "y": 1.95, "width": 483, "height": 473 }
+			},
+			"FAGUANG333": {
+				"FAGUANG333": { "x": 6.34, "y": -56.22, "width": 614, "height": 655 }
+			},
+			"FAGUANG444": {
+				"FAGUANG444": { "x": -9.78, "y": -58.1, "width": 635, "height": 628 }
+			},
+			"FAGUANG666": {
+				"FAGUANG666": { "x": -13.05, "y": 11.15, "width": 508, "height": 462 }
+			},
+			"FAGUANG777": {
+				"FAGUANG777": { "x": -21.36, "y": 37.96, "width": 328, "height": 321 }
+			}
+		}
+	}
+],
+"animations": {
+	"faguang": {
+		"slots": {
+			"FAGUANG111": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.1333, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "time": 0.2333, "name": null }
+				]
+			},
+			"FAGUANG333": {
+				"attachment": [
+					{ "name": null },
+					{ "time": 0.2333, "name": "FAGUANG333" },
+					{ "time": 0.2667, "name": null }
+				]
+			},
+			"FAGUANG444": {
+				"color": [
+					{ "time": 0.2667, "color": "ffffffff" },
+					{ "time": 0.3667, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": null },
+					{ "time": 0.2667, "name": "FAGUANG444" }
+				]
+			},
+			"FAGUANG666": {
+				"attachment": [
+					{ "name": null },
+					{ "time": 0.3667, "name": "FAGUANG666" },
+					{ "time": 0.4, "name": null }
+				]
+			},
+			"FAGUANG777": {
+				"color": [
+					{ "time": 0.4, "color": "ffffffff" },
+					{ "time": 0.4667, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": null },
+					{ "time": 0.4, "name": "FAGUANG777" }
+				]
+			}
+		},
+		"bones": {
+			"guang": {
+				"translate": [
+					{ "y": 3.63 }
+				],
+				"scale": [
+					{ "x": 0.1, "y": 0.1 },
+					{ "time": 0.1333, "x": 0.7, "y": 0.7 },
+					{ "time": 0.2333, "x": 1.3, "y": 1.2 },
+					{ "time": 0.3, "x": 1.2, "y": 1.1 },
+					{ "time": 0.4, "x": 0.9, "y": 0.8 },
+					{ "time": 0.4667, "x": 0.5, "y": 0.5 }
+				]
+			}
+		}
+	}
+}
+}

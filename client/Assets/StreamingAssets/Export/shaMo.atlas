@@ -1,0 +1,48 @@
+
+shaMo.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cao111
+  rotate: true
+  xy: 901, 330
+  size: 159, 93
+  orig: 159, 93
+  offset: 0, 0
+  index: -1
+cao222
+  rotate: true
+  xy: 901, 231
+  size: 99, 59
+  orig: 99, 59
+  offset: 0, 0
+  index: -1
+fengsha111
+  rotate: false
+  xy: 344, 1
+  size: 326, 173
+  orig: 326, 173
+  offset: 0, 0
+  index: -1
+fengsha222
+  rotate: false
+  xy: 670, 0
+  size: 326, 174
+  orig: 326, 174
+  offset: 0, 0
+  index: -1
+fengsha333
+  rotate: false
+  xy: 0, 4
+  size: 344, 170
+  orig: 344, 170
+  offset: 0, 0
+  index: -1
+jin
+  rotate: false
+  xy: 0, 174
+  size: 901, 315
+  orig: 901, 315
+  offset: 0, 0
+  index: -1

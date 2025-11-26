@@ -1,0 +1,154 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a3c1ecb0cfff2e4d9d70fbd9552f19a, type: 3}
+  m_Name: newuifont2
+  m_EditorClassIdentifier: 
+  mMat: {fileID: 2100000, guid: dba65f7c9956a9c468ecaa26e819c2f1, type: 2}
+  mUVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  mFont:
+    mSize: 38
+    mBase: 26
+    mWidth: 256
+    mHeight: 256
+    mSpriteName: 
+    mSaved:
+    - index: 48
+      x: 45
+      y: 139
+      width: 13
+      height: -119
+      offsetX: 1
+      offsetY: 145
+      advance: 15
+      channel: 15
+      kerning: 
+    - index: 49
+      x: 129
+      y: 139
+      width: 9
+      height: -119
+      offsetX: 2
+      offsetY: 145
+      advance: 15
+      channel: 15
+      kerning: 31000000feffffff
+    - index: 50
+      x: 0
+      y: 139
+      width: 14
+      height: -119
+      offsetX: 0
+      offsetY: 145
+      advance: 15
+      channel: 15
+      kerning: 
+    - index: 51
+      x: 59
+      y: 139
+      width: 13
+      height: -119
+      offsetX: 1
+      offsetY: 145
+      advance: 15
+      channel: 15
+      kerning: 
+    - index: 52
+      x: 15
+      y: 139
+      width: 14
+      height: -119
+      offsetX: 0
+      offsetY: 145
+      advance: 15
+      channel: 15
+      kerning: 
+    - index: 53
+      x: 73
+      y: 139
+      width: 13
+      height: -119
+      offsetX: 1
+      offsetY: 145
+      advance: 15
+      channel: 15
+      kerning: 
+    - index: 54
+      x: 30
+      y: 139
+      width: 14
+      height: -119
+      offsetX: 0
+      offsetY: 145
+      advance: 15
+      channel: 15
+      kerning: 
+    - index: 55
+      x: 87
+      y: 139
+      width: 13
+      height: -119
+      offsetX: 1
+      offsetY: 145
+      advance: 15
+      channel: 15
+      kerning: 
+    - index: 56
+      x: 101
+      y: 139
+      width: 13
+      height: -119
+      offsetX: 1
+      offsetY: 145
+      advance: 15
+      channel: 15
+      kerning: 
+    - index: 57
+      x: 115
+      y: 139
+      width: 13
+      height: -119
+      offsetX: 1
+      offsetY: 145
+      advance: 15
+      channel: 15
+      kerning: 
+  mAtlas: {fileID: 11400000, guid: 3e497c62586709b41b606dd6f808de61, type: 2}
+  mReplacement: {fileID: 0}
+  mSymbols:
+  - sequence: 0
+    spriteName: f00
+  - sequence: 1
+    spriteName: f01
+  - sequence: 2
+    spriteName: f02
+  - sequence: 3
+    spriteName: f03
+  - sequence: 4
+    spriteName: f04
+  - sequence: 5
+    spriteName: f05
+  - sequence: 6
+    spriteName: f06
+  - sequence: 7
+    spriteName: f07
+  - sequence: 8
+    spriteName: f08
+  - sequence: 9
+    spriteName: f09
+  mDynamicFont: {fileID: 0}
+  mDynamicFontSize: 16
+  mDynamicFontStyle: 0

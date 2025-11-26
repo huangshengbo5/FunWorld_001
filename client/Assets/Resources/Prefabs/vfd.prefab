@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1090218799639564}
+  m_IsPrefabParent: 1
+--- !u!1 &1090218799639564
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4224068792939020}
+  - component: {fileID: 114353489212773044}
+  m_Layer: 0
+  m_Name: vfd
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1784457987284086
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4706764554260378}
+  m_Layer: 0
+  m_Name: vag0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4224068792939020
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1090218799639564}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4706764554260378}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4706764554260378
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1784457987284086}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4224068792939020}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114353489212773044
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1090218799639564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8bbe47188723cf4ebc9a57f92c0b0ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fromwho: {fileID: 0}
+  agroot: {fileID: 1784457987284086}
+  agroot1: {fileID: 0}
+  zhen: 0
+  daoindex: 0
+  v: 0
+  fdis: 0
+  vv: {x: 0, y: 0, z: 0}
+  vvtemp: {x: 0, y: 0, z: 0}
+  quntype: 0
+  danid: 0
+  skillbeanstepindex: 0
+  enemy: {fileID: 0}
+  overtype: 0
+  overdisortime: 0
+  guaitime: 0
+  over: 0
+  lastpos: {x: 0, y: 0, z: 0}
+  bornpos: {x: 0, y: 0, z: 0}
+  rolerootscalex: 1
+  fc: {fileID: 0}
+  bigkind: 0
+  smallkind: 0
+  otherkind: 0
+  rolefrom: {fileID: 0}
+  roleto: {fileID: 0}
+  sta: 0
+  dalelist: []

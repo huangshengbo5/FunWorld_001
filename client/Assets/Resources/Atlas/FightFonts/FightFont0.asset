@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a3c1ecb0cfff2e4d9d70fbd9552f19a, type: 3}
+  m_Name: FightFont0
+  m_EditorClassIdentifier: 
+  mMat: {fileID: 2100000, guid: 8e7a9a10ebc1dc54f96436a5d751bd82, type: 2}
+  mUVRect:
+    serializedVersion: 2
+    x: 0.087890625
+    y: 0.22070312
+    width: 0.5
+    height: 0.5
+  mFont:
+    mSize: 65
+    mBase: 52
+    mWidth: 256
+    mHeight: 256
+    mSpriteName: f05
+    mSaved:
+    - index: 48
+      x: 0
+      y: 223
+      width: 22
+      height: -158
+      offsetX: 0
+      offsetY: 223
+      advance: 44
+      channel: 15
+      kerning: 
+  mAtlas: {fileID: 11400000, guid: 51e7e17f3bd6ef1428bf918ba1aa3562, type: 2}
+  mReplacement: {fileID: 0}
+  mSymbols:
+  - sequence: 0
+    spriteName: f00
+  - sequence: 1
+    spriteName: f01
+  - sequence: 2
+    spriteName: f02
+  - sequence: 3
+    spriteName: f03
+  - sequence: 4
+    spriteName: f04
+  - sequence: 5
+    spriteName: f05
+  - sequence: 6
+    spriteName: f06
+  - sequence: 7
+    spriteName: f07
+  - sequence: 8
+    spriteName: f08
+  - sequence: 9
+    spriteName: f09
+  - sequence: +
+    spriteName: f0+
+  - sequence: '-'
+    spriteName: f0-
+  - sequence: '&'
+    spriteName: f0bao
+  mDynamicFont: {fileID: 0}
+  mDynamicFontSize: 65
+  mDynamicFontStyle: 0

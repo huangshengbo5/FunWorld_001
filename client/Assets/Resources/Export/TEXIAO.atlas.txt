@@ -1,0 +1,41 @@
+
+TEXIAO.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+FAGUANG111
+  rotate: true
+  xy: 1290, 462
+  size: 483, 473
+  orig: 483, 473
+  offset: 0, 0
+  index: -1
+FAGUANG333
+  rotate: true
+  xy: 635, 331
+  size: 614, 655
+  orig: 614, 655
+  offset: 0, 0
+  index: -1
+FAGUANG444
+  rotate: false
+  xy: 0, 317
+  size: 635, 628
+  orig: 635, 628
+  offset: 0, 0
+  index: -1
+FAGUANG666
+  rotate: false
+  xy: 1290, 0
+  size: 508, 462
+  orig: 508, 462
+  offset: 0, 0
+  index: -1
+FAGUANG777
+  rotate: false
+  xy: 635, 10
+  size: 328, 321
+  orig: 328, 321
+  offset: 0, 0
+  index: -1

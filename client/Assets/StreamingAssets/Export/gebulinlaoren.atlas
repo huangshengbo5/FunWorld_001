@@ -1,0 +1,132 @@
+
+gebulinlaoren.png
+size: 4096, 1024
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+da tui you
+  rotate: true
+  xy: 2097, 268
+  size: 279, 299
+  orig: 279, 299
+  offset: 0, 0
+  index: -1
+da tui zuo
+  rotate: true
+  xy: 2396, 233
+  size: 183, 284
+  orig: 183, 284
+  offset: 0, 0
+  index: -1
+er duo you
+  rotate: false
+  xy: 2326, 75
+  size: 142, 158
+  orig: 142, 158
+  offset: 0, 0
+  index: -1
+er duo zuo
+  rotate: false
+  xy: 2680, 208
+  size: 278, 208
+  orig: 278, 208
+  offset: 0, 0
+  index: -1
+mei mao you
+  rotate: true
+  xy: 3842, 495
+  size: 156, 194
+  orig: 156, 194
+  offset: 0, 0
+  index: -1
+mei mao zuo
+  rotate: true
+  xy: 0, 20
+  size: 53, 144
+  orig: 53, 144
+  offset: 0, 0
+  index: -1
+qian bi you
+  rotate: true
+  xy: 718, 74
+  size: 349, 525
+  orig: 349, 525
+  offset: 0, 0
+  index: -1
+qian bi zuo
+  rotate: true
+  xy: 1679, 547
+  size: 435, 728
+  orig: 435, 728
+  offset: 0, 0
+  index: -1
+shang bi you
+  rotate: false
+  xy: 3484, 535
+  size: 358, 447
+  orig: 358, 447
+  offset: 0, 0
+  index: -1
+shang bi zuo
+  rotate: true
+  xy: 1679, 315
+  size: 232, 418
+  orig: 232, 418
+  offset: 0, 0
+  index: -1
+shang shen
+  rotate: true
+  xy: 1243, 84
+  size: 339, 414
+  orig: 339, 414
+  offset: 0, 0
+  index: -1
+tiao tui zuo
+  rotate: false
+  xy: 3842, 651
+  size: 254, 331
+  orig: 254, 331
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 2987, 468
+  size: 497, 514
+  orig: 497, 514
+  offset: 0, 0
+  index: -1
+tou fa hou
+  rotate: false
+  xy: 2048, 0
+  size: 278, 268
+  orig: 278, 268
+  offset: 0, 0
+  index: -1
+wei jin
+  rotate: true
+  xy: 2407, 416
+  size: 566, 580
+  orig: 566, 580
+  offset: 0, 0
+  index: -1
+xiao tui you
+  rotate: true
+  xy: 1657, 2
+  size: 313, 391
+  orig: 313, 391
+  offset: 0, 0
+  index: -1
+yi fu hou
+  rotate: false
+  xy: 0, 73
+  size: 718, 909
+  orig: 718, 909
+  offset: 0, 0
+  index: -1
+yi fu you
+  rotate: true
+  xy: 718, 423
+  size: 559, 961
+  orig: 559, 961
+  offset: 0, 0
+  index: -1
