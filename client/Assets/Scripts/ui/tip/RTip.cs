@@ -58,11 +58,11 @@ public class RTip : DialogMonoBehaviour
             return;
         }
 
-        if (IsValidIdNumber(input3.value))
-        {
-            UIManager.showToast("请输入正确的身份证号。");
-            return;
-        }
+        // if (IsValidIdNumber(input3.value))
+        // {
+        //     UIManager.showToast("请输入正确的身份证号。");
+        //     return;
+        // }
         HttpManager.instance.sendLogin1(input.value, input2.value, input3.value, (code0) =>
         {
 
