@@ -245,9 +245,7 @@ public class MyClient
         }
     }
 
-    // public static string bigurl = "http://182.92.5.29:8080";
-    
-    public static string bigurl = "http://127.0.0.1:8080";
+    public static string bigurl = "http://182.92.5.29:8080";
 
 
     private static readonly object reviceLockObject = new object();
