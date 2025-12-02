@@ -237,24 +237,28 @@ public class CoverDlg : MonoBehaviour
 
         var userId = input.value;
         //  GameGlobal.gamedata.guideStep = 0;
-        if (GameGlobal.gamedata.guideStep < 8)
-        {
-            rootgo.SetActive(false);
-            storyPlay.PlayStroy();
-        }
-        else
-        {
-            if (GameGlobal.gamedata.guideStep >= 9 && GameGlobal.gamedata.guideStep < 16)
-            {
-                GameGlobal.gamedata.isWaitWorld = true;
-            }
-            else
-            {
-                GameGlobal.gamedata.isWaitWorld = false;
-            }
-            GameGlobal.enterMenuScene();
-        }
+        
+        //todo 暂时屏蔽引导逻辑
+        // if (GameGlobal.gamedata.guideStep < 8)
+        // {
+        //     rootgo.SetActive(false);
+        //     storyPlay.PlayStroy();
+        // }
+        // else
+        // {
+        //     if (GameGlobal.gamedata.guideStep >= 9 && GameGlobal.gamedata.guideStep < 16)
+        //     {
+        //         GameGlobal.gamedata.isWaitWorld = true;
+        //     }
+        //     else
+        //     {
+        //         GameGlobal.gamedata.isWaitWorld = false;
+        //     }
+        //     GameGlobal.enterMenuScene();
+        // }
 
+        GameGlobal.enterMenuScene();
+        
         //var localuserId = PlayerPrefs.GetString("storyMark", "");
         //if (localuserId.Equals("storyMark" + userId))
         //{
@@ -328,14 +332,17 @@ public class CoverDlg : MonoBehaviour
         var userId = input.value;
         PlayerPrefs.SetString("storyMark", "storyMark" + userId);
         Debug.Log("播放完片头动画了=============="+ GameGlobal.gamedata.guideStep);
-        HttpManager.instance.sendGuideBattle((code1) =>
-        {
-            if (code1 == Callback.SUCCESS)
-            {
-                GameGlobal.enterFightScene();
-            }
-
-        });
+        //todo  GuideBattle 协议有问题
+        // HttpManager.instance.sendGuideBattle((code1) =>
+        // {
+        //     if (code1 == Callback.SUCCESS)
+        //     {
+        //         GameGlobal.enterFightScene();
+        //     }
+        //
+        // });
+        
+        GameGlobal.enterFightScene();
         //FightControl.fb = response.report;
         //FightControl.fbtype = 0;
         //GameGlobal.enterFightScene();

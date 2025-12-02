@@ -720,7 +720,7 @@ public class HttpManager : MonoBehaviour
                 GameGlobal.gamedata.userinfo = response.user;
                 GameGlobal.gamedata.userinfo.extend = response.extend;
                 GameGlobal.gamedata.stageindex = response.user.extend.campaign.lastCampainID;
-                Debug.LogError(GameGlobal.gamedata.stageindex + " sendUserInfo " + data_campaignDef.datas.Count);
+                Debug.Log(GameGlobal.gamedata.stageindex + " sendUserInfo " + data_campaignDef.datas.Count);
                 if (GameGlobal.gamedata.stageindex>= data_campaignDef.datas.Count)
                 {
                     GameGlobal.gamedata.stageindex = data_campaignDef.datas.Count - 1;
@@ -864,7 +864,7 @@ public class HttpManager : MonoBehaviour
         {
             HeroListResponse response = (HeroListResponse)backResponse;
 
-            if (response.code == Response.SUCCESS)
+            if (response.code == Response.SUCCESS && response.heros != null)
             {
                 //GameGlobal.gamedata.partnerlist.Clear();
                 for (int i = 0; i < response.heros.Count; i++)
