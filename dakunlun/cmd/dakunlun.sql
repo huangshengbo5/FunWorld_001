@@ -1,5 +1,5 @@
 
-
+DROP TABLE IF EXISTS `game_hero_equip`;
 CREATE TABLE `game_hero_equip` (
   `id` int(11) UNSIGNED NOT NULL COMMENT 'ID',
   `uid` int(11) UNSIGNED NOT NULL COMMENT '用户ID',
@@ -26,7 +26,7 @@ CREATE TABLE `game_hero_equip` (
 
 
 
-
+Drop TABLE IF EXISTS `game_hero_equip_doc`;
 CREATE TABLE `game_hero_equip_doc` (
   `id` int(11) UNSIGNED NOT NULL COMMENT '主键',
   `uid` int(11) UNSIGNED NOT NULL COMMENT '用户ID',
@@ -37,16 +37,18 @@ CREATE TABLE `game_hero_equip_doc` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='装备图鉴';
 
 
-
+Drop TABLE IF EXISTS `game_passport`;
 CREATE TABLE `game_passport` (
   `id` int(10) UNSIGNED NOT NULL COMMENT 'passport_id',
   `name` varchar(64) NOT NULL COMMENT 'passport_name',
+  `password` varchar(64) NOT NULL DEFAULT '' COMMENT '密码',
   `login_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '登陆时间',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
   `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='账号表';
 
 
+DROP TABLE IF EXISTS `game_user`;
 CREATE TABLE `game_user` (
   `id` int(10) UNSIGNED NOT NULL COMMENT '用户ID',
   `name` varchar(32) NOT NULL COMMENT '用户名',
@@ -64,15 +66,16 @@ CREATE TABLE `game_user` (
   `equips` blob NOT NULL COMMENT '装备信息',
   `campaign_num` int(10) UNSIGNED NOT NULL DEFAULT '0' COMMENT '通过的关卡数',
   `building_effect` blob NOT NULL COMMENT '建筑效果',
-  `tech_effect` blob NOT NULL COMMENT '科技效果',
+  `tech_effect` blob NOT NULL COMMENT '科技效果', 
   `cast_effect` tinyblob NOT NULL COMMENT '锻造信息',
   `data_version` smallint(5) UNSIGNED NOT NULL DEFAULT '0' COMMENT '数据版本号',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
-  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间'
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
+  `extra` tinyblob NOT NULL COMMENT '额外信息'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='用户表';
 
 
-
+DROP TABLE IF EXISTS `game_user_annals`;
 CREATE TABLE `game_user_annals` (
   `id` int(11) UNSIGNED NOT NULL COMMENT '用户ID',
   `done_list` blob NOT NULL COMMENT '已领取奖励',
@@ -81,7 +84,7 @@ CREATE TABLE `game_user_annals` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='成就表';
 
 
-
+DROP TABLE IF EXISTS `game_user_arena`;
 CREATE TABLE `game_user_arena` (
   `id` int(11) UNSIGNED NOT NULL COMMENT '唯一ID',
   `uid` int(11) UNSIGNED NOT NULL COMMENT '用户ID',
@@ -99,7 +102,7 @@ CREATE TABLE `game_user_arena` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='竞技场表';
 
 
-
+DROP TABLE IF EXISTS `game_user_building`;
 CREATE TABLE `game_user_building` (
   `ID` int(11) UNSIGNED NOT NULL COMMENT '主键',
   `uid` int(11) UNSIGNED NOT NULL COMMENT '用户ID',
@@ -110,7 +113,7 @@ CREATE TABLE `game_user_building` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='用户建筑表';
 
 
-
+DROP TABLE IF EXISTS `game_user_crystal`;
 CREATE TABLE `game_user_crystal` (
   `ID` int(11) UNSIGNED NOT NULL COMMENT '主键',
   `uid` int(11) UNSIGNED NOT NULL COMMENT '用户ID',
@@ -121,7 +124,7 @@ CREATE TABLE `game_user_crystal` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='用户水晶表';
 
 
-
+DROP TABLE IF EXISTS `game_user_explore`;
 CREATE TABLE `game_user_explore` (
   `id` int(10) UNSIGNED NOT NULL COMMENT '主键',
   `uid` int(11) UNSIGNED NOT NULL COMMENT '用户ID',
@@ -134,7 +137,7 @@ CREATE TABLE `game_user_explore` (
 
 
 
-
+DROP TABLE IF EXISTS `game_user_extend`;
 CREATE TABLE `game_user_extend` (
   `id` int(11) UNSIGNED NOT NULL COMMENT '用户id',
   `campaign_id` int(11) UNSIGNED NOT NULL DEFAULT '0' COMMENT '关卡ID',
@@ -155,7 +158,7 @@ CREATE TABLE `game_user_extend` (
 
 
 
-
+Drop TABLE IF EXISTS `game_user_hero`;
 CREATE TABLE `game_user_hero` (
   `id` int(11) UNSIGNED NOT NULL COMMENT '主键ID',
   `uid` int(11) UNSIGNED NOT NULL COMMENT '用户ID',
@@ -182,7 +185,7 @@ CREATE TABLE `game_user_hero` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='英雄表';
 
 
-
+DROP TABLE IF EXISTS `game_user_mail`;
 CREATE TABLE `game_user_mail` (
   `id` int(11) UNSIGNED NOT NULL COMMENT '主键',
   `uid` int(11) UNSIGNED NOT NULL COMMENT '用户ID',
@@ -196,7 +199,7 @@ CREATE TABLE `game_user_mail` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='用户邮件';
 
 
-
+DROP TABLE IF EXISTS `game_user_tech`;
 CREATE TABLE `game_user_tech` (
   `ID` int(11) UNSIGNED NOT NULL COMMENT '主键',
   `uid` int(11) UNSIGNED NOT NULL COMMENT '用户ID',
@@ -206,8 +209,27 @@ CREATE TABLE `game_user_tech` (
   `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='用户科技表';
 
+DROP TABLE IF EXISTS `data_account`;
+CREATE TABLE `data_account` (
+  `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `name` varchar(64) NOT NULL COMMENT '账号名',
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='账号数据表';
 
-
+DROP TABLE IF EXISTS `data_tower`;
+CREATE TABLE `data_tower` (
+  `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `name` varchar(64) NOT NULL COMMENT '塔名称',
+  `level` int(11) UNSIGNED NOT NULL DEFAULT 1 COMMENT '层数',
+  `reward` varchar(255) NOT NULL DEFAULT '' COMMENT '奖励内容',
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='爬塔数据表';
 
 --
 -- 表的索引 `game_hero_equip`

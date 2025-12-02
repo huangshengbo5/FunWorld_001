@@ -8,6 +8,7 @@ import (
 	"dakunlun/app/service/data"
 	"dakunlun/app/util"
 	"errors"
+
 	"github.com/gin-gonic/gin"
 )
 
@@ -155,10 +156,11 @@ func Regist(c *gin.Context) {
 	}
 
 	passportEntity, err := service.PassportService.GetPassportByName(req.Name)
-	if err != nil {
-		service.RenderWithAppError(c, errors.New("身份证号不正确"))
-		return
-	}
+	// if err != nil {
+	// 	service.RenderWithAppError(c, errors.New("身份证号信息不正确"))
+	// 	return
+	// }
+	// 411481199312263319
 
 	if passportEntity != nil {
 		service.RenderWithAppError(c, errors.New("用户名已存在"))
