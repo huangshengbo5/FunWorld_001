@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using UnityEngine;
 
 public class RTip : DialogMonoBehaviour
@@ -58,11 +59,11 @@ public class RTip : DialogMonoBehaviour
             return;
         }
 
-        // if (IsValidIdNumber(input3.value))
-        // {
-        //     UIManager.showToast("请输入正确的身份证号。");
-        //     return;
-        // }
+        if (!IsValidIdNumber(input3.value))
+        {
+            UIManager.showToast("请输入正确的身份证号。");
+            return;
+        }
         HttpManager.instance.sendLogin1(input.value, input2.value, input3.value, (code0) =>
         {
 
@@ -81,28 +82,23 @@ public class RTip : DialogMonoBehaviour
 
     public bool IsValidIdNumber(string idNumber)
     {
-        if (idNumber == null || idNumber.Length != 18)
-            return false; // 长度不是18位
+        if (string.IsNullOrEmpty(idNumber)) return false;
+        // 1. 格式校验
+        if (!Regex.IsMatch(idNumber, @"^\d{17}[\dXx]$")) return false;
 
-        // 提取身份证号码的前17位
-        string idNumber17 = idNumber.Substring(0, 17);
+        // 2. 出生日期校验
+        string birth = idNumber.Substring(6, 8);
+        if (!DateTime.TryParseExact(birth, "yyyyMMdd", null, System.Globalization.DateTimeStyles.None, out _))
+            return false;
 
-        // 计算前17位的加权和
-        int[] weights = { 7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2 };
+        // 3. 校验码校验
+        int[] weight = {7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2};
+        char[] validate = {'1','0','X','9','8','7','6','5','4','3','2'};
         int sum = 0;
-        for (int i = 0; i < idNumber17.Length; i++)
-        {
-            sum += (idNumber17[i] - '0') * weights[i];
-        }
-
-        // 计算校验码
-        int checkCode = (12 - sum % 11) % 11;
-        char[] checkCodes = { '1', '0', 'X', '9', '8', '7', '6', '5', '4', '3', '2' };
-        char expectedCheckCode = checkCodes[checkCode];
-
-        // 比较计算出的校验码和最后一位
-        char actualCheckCode = idNumber[17];
-        return char.ToUpper(actualCheckCode) == char.ToUpper(expectedCheckCode);
+        for (int i = 0; i < 17; i++)
+            sum += (idNumber[i] - '0') * weight[i];
+        char code = validate[sum % 11];
+        return char.ToUpper(idNumber[17]) == code;
     }
     // Update is called once per frame
     void Update()
