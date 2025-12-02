@@ -231,6 +231,31 @@ CREATE TABLE `data_tower` (
   UNIQUE KEY `name` (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='爬塔数据表';
 
+DROP TABLE IF EXISTS `data_campaign`;
+CREATE TABLE `data_campaign` (
+  `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `name` varchar(64) NOT NULL COMMENT '关卡名称',
+  `level` int(11) UNSIGNED NOT NULL DEFAULT 1 COMMENT '关卡等级',
+  `rewards` varchar(255) NOT NULL DEFAULT '' COMMENT '关卡奖励',
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='关卡数据表';
+
+DROP TABLE IF EXISTS `data_hero`;
+CREATE TABLE `data_hero` (
+  `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `name` varchar(64) NOT NULL COMMENT '英雄名称',
+  `type` int(11) UNSIGNED NOT NULL DEFAULT 0 COMMENT '英雄类型',
+  `level` int(11) UNSIGNED NOT NULL DEFAULT 1 COMMENT '初始等级',
+  `desc` varchar(255) NOT NULL DEFAULT '' COMMENT '描述',
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='英雄数据表';
+
 --
 -- 表的索引 `game_hero_equip`
 --
