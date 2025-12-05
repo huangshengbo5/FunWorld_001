@@ -256,6 +256,20 @@ CREATE TABLE `data_hero` (
   UNIQUE KEY `name` (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='英雄数据表';
 
+DROP TABLE IF EXISTS `data_annals`;
+CREATE TABLE `data_annals` (
+  `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `name` varchar(64) NOT NULL COMMENT '成就名称',
+  `desc` varchar(255) NOT NULL DEFAULT '' COMMENT '描述',
+  `reward` varchar(255) NOT NULL DEFAULT '' COMMENT '奖励内容',
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='成就数据表';
+
+
+
 --
 -- 表的索引 `game_hero_equip`
 --

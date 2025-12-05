@@ -1,6 +1,6 @@
 inherit_files=["base.toml"]
 
-swagger_json = "http://8.140.113.88:8080/swagger/doc.json"
+swagger_json = "http://127.0.0.1:8080/swagger/doc.json"
 env = "test" #"dev/"test"/"sandbox"/"prod"
 
 redis_uri = '127.0.0.1:6379'

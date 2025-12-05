@@ -36,7 +36,7 @@ type Config struct {
 	Env         string `default:"dev"`
 	Platform    string `default:"native"`
 	ReqcheckTtl time.Duration
-	SwaggerJson string `default:"http://8.140.113.88:8080/swagger/doc.json"`
+	SwaggerJson string `default:"http://127.0.0.1:8080/swagger/doc.json"`
 
 	RedisConfig
 	MysqlConfig

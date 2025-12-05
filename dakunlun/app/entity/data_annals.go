@@ -16,7 +16,7 @@ type AnnalsData struct {
 	Rewards RewardStrings
 }
 
-//设置表名，默认是结构体的名的复数形式
+// 设置表名，默认是结构体的名的复数形式
 func (*AnnalsData) TableName() string {
 	return "data_annals"
 }
